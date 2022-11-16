@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AttireApp.Shared", "AttireApp\AttireApp.Shared\AttireApp.Shared.shproj", "{6279C845-92F8-4333-AB99-3D213163593C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{129EA16A-C79D-4A5C-8451-16EE21BFB069}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttireApp.Windows", "AttireApp\AttireApp.Windows\AttireApp.Windows.csproj", "{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|arm64 = Debug|arm64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|arm64 = Release|arm64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|arm64.ActiveCfg = Debug|arm64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|arm64.Build.0 = Debug|arm64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|arm64.Deploy.0 = Debug|arm64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|x64.ActiveCfg = Debug|x64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|x64.Build.0 = Debug|x64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|x64.Deploy.0 = Debug|x64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|x86.ActiveCfg = Debug|x86
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|x86.Build.0 = Debug|x86
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|x86.Deploy.0 = Debug|x86
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|arm64.ActiveCfg = Release|arm64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|arm64.Build.0 = Release|arm64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|arm64.Deploy.0 = Release|arm64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|x64.ActiveCfg = Release|x64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|x64.Build.0 = Release|x64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|x64.Deploy.0 = Release|x64
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|x86.ActiveCfg = Release|x86
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|x86.Build.0 = Release|x86
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA} = {129EA16A-C79D-4A5C-8451-16EE21BFB069}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {966B8E79-E7BC-480C-BA26-A984E98AF880}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AttireApp\AttireApp.Shared\AttireApp.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		AttireApp\AttireApp.Shared\AttireApp.Shared.projitems*{d3f08cf3-a614-4654-9a14-1bf62a1e5fba}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

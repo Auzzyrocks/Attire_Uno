@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="AttireApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AttireApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"    
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" Background="SteelBlue">
+        <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
+        <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
+
+        <!-- Username Label & Text Box -->
+        <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+        <TextBox Width="300" Text="username@example.com" Margin="0,0,0,24"/>
+
+        <!-- Label -->
+        <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+        <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+
+        <!-- Send Button -->
+        <Button Content="Log In" HorizontalAlignment="Center" Height="40" Width="300"/>
+    </StackPanel>
+</Page>
