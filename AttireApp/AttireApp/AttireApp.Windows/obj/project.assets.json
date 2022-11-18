@@ -2314,6 +2314,7 @@
     ]
   },
   "packageFolders": {
+    "C:\\Users\\shoulau\\.nuget\\packages\\": {},
     "C:\\Users\\Smile\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
@@ -2321,11 +2322,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Smile\\source\\repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+      "projectUniqueName": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
       "projectName": "AttireApp.Windows",
-      "projectPath": "C:\\Users\\Smile\\source\\repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
-      "packagesPath": "C:\\Users\\Smile\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Smile\\source\\repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
+      "projectPath": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+      "packagesPath": "C:\\Users\\shoulau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -2334,6 +2335,8 @@
       "configFilePaths": [
         "C:\\Users\\Smile\\source\\repos\\attire_uno\\AttireApp\\NuGet.Config",
         "C:\\Users\\Smile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\NuGet.Config",
+        "C:\\Users\\shoulau\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
