@@ -175,3 +175,14 @@ C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\o
 C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\qualifiers.txt.intermediate
 C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\MultipleQualifiersPerDimensionFound.txt
 C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\ProjectArchitectures.txt
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Microsoft.Windows.Security.AccessControl.Projection.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Microsoft.Windows.Widgets.Projection.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\MvvmHelpers.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\System.Text.Encodings.Web.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\System.Text.Json.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Uno.Diagnostics.Eventing.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Uno.Foundation.Logging.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Uno.UI.Toolkit.dll
+C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
