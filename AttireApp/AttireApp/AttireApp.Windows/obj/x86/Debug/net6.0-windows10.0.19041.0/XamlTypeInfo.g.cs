@@ -224,23 +224,33 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[12];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "AttireApp.MainPage";
+            _typeNameTable[4] = "AttireApp.CreateAccountPage";
             _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "AttireApp.ForecastPage";
+            _typeNameTable[8] = "AttireApp.ForgotPasswordPage";
+            _typeNameTable[9] = "AttireApp.HomePage";
+            _typeNameTable[10] = "AttireApp.MainPage";
+            _typeNameTable[11] = "AttireApp.SettingsPage";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[12];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::AttireApp.MainPage);
+            _typeTable[4] = typeof(global::AttireApp.CreateAccountPage);
             _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::AttireApp.ForecastPage);
+            _typeTable[8] = typeof(global::AttireApp.ForgotPasswordPage);
+            _typeTable[9] = typeof(global::AttireApp.HomePage);
+            _typeTable[10] = typeof(global::AttireApp.MainPage);
+            _typeTable[11] = typeof(global::AttireApp.SettingsPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -276,7 +286,12 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_4_MainPage() { return new global::AttireApp.MainPage(); }
+        private object Activate_4_CreateAccountPage() { return new global::AttireApp.CreateAccountPage(); }
+        private object Activate_7_ForecastPage() { return new global::AttireApp.ForecastPage(); }
+        private object Activate_8_ForgotPasswordPage() { return new global::AttireApp.ForgotPasswordPage(); }
+        private object Activate_9_HomePage() { return new global::AttireApp.HomePage(); }
+        private object Activate_10_MainPage() { return new global::AttireApp.MainPage(); }
+        private object Activate_11_SettingsPage() { return new global::AttireApp.SettingsPage(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -315,9 +330,9 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  AttireApp.MainPage
+            case 4:   //  AttireApp.CreateAccountPage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_CreateAccountPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -328,6 +343,41 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
 
             case 6:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  AttireApp.ForecastPage
+                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_ForecastPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  AttireApp.ForgotPasswordPage
+                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_ForgotPasswordPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  AttireApp.HomePage
+                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_HomePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  AttireApp.MainPage
+                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  AttireApp.SettingsPage
+                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
