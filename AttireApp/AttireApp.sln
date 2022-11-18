@@ -7,7 +7,17 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AttireApp.Shared", "AttireA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{129EA16A-C79D-4A5C-8451-16EE21BFB069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttireApp.Windows", "AttireApp\AttireApp.Windows\AttireApp.Windows.csproj", "{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttireApp.Windows", "AttireApp\AttireApp.Windows\AttireApp.Windows.csproj", "{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{B213389E-F545-44F9-B336-F7E29D3576C4}"
+	ProjectSection(SolutionItems) = preProject
+		accounts.cs = accounts.cs
+		..\..\attire\Database\constants.cs = ..\..\attire\Database\constants.cs
+		..\..\attire\Database\DBUser.cs = ..\..\attire\Database\DBUser.cs
+		..\..\attire\Database\Login.cs = ..\..\attire\Database\Login.cs
+		..\..\attire\Database\Notes = ..\..\attire\Database\Notes
+		..\..\attire\Database\UserTable.cs = ..\..\attire\Database\UserTable.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +53,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA} = {129EA16A-C79D-4A5C-8451-16EE21BFB069}
+		{B213389E-F545-44F9-B336-F7E29D3576C4} = {129EA16A-C79D-4A5C-8451-16EE21BFB069}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {966B8E79-E7BC-480C-BA26-A984E98AF880}

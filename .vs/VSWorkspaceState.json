@@ -1,10 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\AttireApp",
-    "\\AttireApp\\AttireApp",
-    "\\AttireApp\\AttireApp\\AttireApp.Shared"
+    ""
   ],
-  "SelectedNode": "\\AttireApp\\AttireApp\\AttireApp.Shared\\MainPage.xaml",
   "PreviewInSolutionExplorer": false
 }
