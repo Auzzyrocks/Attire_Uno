@@ -2,33 +2,26 @@
  * Author: Brandon Cosh
  * Date: November 7, 2022
  */
-
-using MvvmHelpers;
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
 namespace AttireApp.API
 {
-    public class RootForecast : ObservableObject
-    {
-        [JsonPropertyName("location")]
-        public Location Location { get; set; }
+    //public class RootForecast
+    //{
+    //    [JsonPropertyName("location")]
+    //    public Location Location { get; set; }
 
-        private Current current;
-        [JsonPropertyName("current")]
-        public Current Current
-        {
-            get => current;
-            set => SetProperty(ref current, value);
-        }
+    //    [JsonPropertyName("current")]
+    //    public Current Current { get; set; }
 
-        [JsonPropertyName("forecast")]
-        public Forecast Forecast { get; set; }
+    //    [JsonPropertyName("forecast")]
+    //    public Forecast Forecast { get; set; }
 
-        [JsonPropertyName("alerts")]
-        public Alerts Alerts { get; set; }
-    }
+    //    [JsonPropertyName("alerts")]
+    //    public Alerts Alerts { get; set; }
+    //}
 
     public class Forecast
     {
@@ -127,7 +120,6 @@ namespace AttireApp.API
 
         [JsonPropertyName("time")]
         public string Time { get; set; }
-        public DateTime RTime { get; set; }
 
         [JsonPropertyName("temp_c")]
         public double TempC { get; set; }

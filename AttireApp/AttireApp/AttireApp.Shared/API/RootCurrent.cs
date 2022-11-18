@@ -2,49 +2,46 @@
  * Author: Brandon Cosh
  * Date: November 7, 2022
  */
-
-using AttireApp.API;
-using MvvmHelpers;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Text.Json.Serialization;
+using System;
+using System.Globalization;
+using MvvmHelpers;
 
 namespace AttireApp.API
 {
-    public class RootCurrent : ObservableObject
-    {
-        [JsonPropertyName("location")]
-        public Location Location { get; set; }
+    //public class RootCurrent
+    //{
+    //    [JsonPropertyName("location")]
+    //    public Location Location { get; set; }
 
-        [JsonPropertyName("current")]
-        public Current Current { get; set; }
-    }
+    //    [JsonPropertyName("current")]
+    //    public Current Current { get; set; }
+    //}
 
-    public class Condition
+    public class Condition : ObservableObject
     {
         [JsonPropertyName("text")]
         public string Text { get; set; }
 
+        private string icon;
         [JsonPropertyName("icon")]
-        public string Icon { get; set; }
+        public string Icon
+        {
+            get => "https:" + icon;
+            set => SetProperty(ref icon, value);
+        }
 
         [JsonPropertyName("code")]
         public int Code { get; set; }
     }
 
-    public class Current : ObservableObject
+    public class Current
     {
         [JsonPropertyName("last_updated_epoch")]
         public int LastUpdatedEpoch { get; set; }
 
-        private string lastUpdated;
         [JsonPropertyName("last_updated")]
-        public string LastUpdated
-        {
-            get => lastUpdated;
-            set => SetProperty(ref lastUpdated, value);
-        }
+        public string LastUpdated { get; set; }
 
         [JsonPropertyName("temp_c")]
         public double TempC { get; set; }
@@ -136,5 +133,4 @@ namespace AttireApp.API
         [JsonPropertyName("localtime")]
         public string Localtime { get; set; }
     }
-
 }
