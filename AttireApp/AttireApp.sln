@@ -7,7 +7,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AttireApp.Shared", "AttireA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{129EA16A-C79D-4A5C-8451-16EE21BFB069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttireApp.Windows", "AttireApp\AttireApp.Windows\AttireApp.Windows.csproj", "{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttireApp.Windows", "AttireApp\AttireApp.Windows\AttireApp.Windows.csproj", "{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +19,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6279C845-92F8-4333-AB99-3D213163593C}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{6279C845-92F8-4333-AB99-3D213163593C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6279C845-92F8-4333-AB99-3D213163593C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6279C845-92F8-4333-AB99-3D213163593C}.Release|arm64.ActiveCfg = Release|Any CPU
+		{6279C845-92F8-4333-AB99-3D213163593C}.Release|x64.ActiveCfg = Release|Any CPU
+		{6279C845-92F8-4333-AB99-3D213163593C}.Release|x86.ActiveCfg = Release|Win32
 		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|arm64.ActiveCfg = Debug|arm64
 		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|arm64.Build.0 = Debug|arm64
 		{D3F08CF3-A614-4654-9A14-1BF62A1E5FBA}.Debug|arm64.Deploy.0 = Debug|arm64
