@@ -9,6 +9,42 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Return to Home Page Button -->
+                <Button Content="Back to Home Page" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 30, 0, 50"/>
+
+                <!--Location-->
+                <ComboBox Header="Location" PlaceholderText="Select Your Location" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
+                    <x:String>Nanaimo</x:String>
+                    <x:String>Victoria</x:String>
+                    <x:String>Courtney</x:String>
+                    <x:String>Duncan</x:String>
+                </ComboBox>
+
+                <!--Clothing Preferences-->
+                <ComboBox Header="Clothing Preferences" PlaceholderText="Select the most applicable" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
+                    <x:String>Dress Very Warm</x:String>
+                    <x:String>Dress Somewhat Warm</x:String>
+                    <x:String>Dress Moderatley</x:String>
+                    <x:String>Dress Somewhat Cool</x:String>
+                    <x:String>Dress Very Cool</x:String>
+                </ComboBox>
+
+                <!--Temperature Scale Preferences-->
+                <ComboBox Header="Celcius / Farenheight" PlaceholderText="Select Temperature Scale" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
+                    <x:String>Celsius</x:String>
+                    <x:String>Fahrenheit</x:String>
+                </ComboBox>
+
+                <!-- Change Password -->
+                <Button Content="Change Password" Click="ForgotPasswordPage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="10"/>
+
+                <!-- Apply Changes -->
+                <Button Content="Apply Changes" Click="ApplySettings_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 20, 0, 40"/>
+                
+            </StackPanel>
+        </ScrollViewer>
 
     </Grid>
 </Page>

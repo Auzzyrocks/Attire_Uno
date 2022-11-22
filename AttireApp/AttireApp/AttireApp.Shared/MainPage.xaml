@@ -8,21 +8,28 @@
     mc:Ignorable="d"    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Orientation="Vertical" Background="SteelBlue">
-        <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
-        <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Vertical" Background="SteelBlue">
+            <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
+            <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
 
-        <!-- Username Label & Text Box -->
-        <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-        <TextBox Width="300" Text="username@example.com" Margin="0,0,0,24"/>
+            <!-- Username Label & Text Box -->
+            <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBox Width="300" Text="username@example.com" Margin="0,0,0,24"/>
 
-        <!-- Label -->
-        <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-        <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+            <!-- Label -->
+            <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
 
-        <!-- Send Button -->
-        <Button Content="Log In" HorizontalAlignment="Center" Height="40" Width="300"/>
-        <HyperlinkButton Content="Link to Forecast Page" Click="LinkForecast_Click" HorizontalAlignment="Center"/>
-        <HyperlinkButton Content="Create Account" Click="CreateAccountPage_Click" HorizontalAlignment="Center"/>
-    </StackPanel>
+            <!-- Login Button -->
+            <Button Content="Log In" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300"/>
+            
+            <HyperlinkButton Content="Link to Home Page" Click="HomePage_Click" HorizontalAlignment="Center"/>
+            
+            <HyperlinkButton Content="Link to Forecast Page" Click="LinkForecast_Click" HorizontalAlignment="Center"/>
+            
+            <HyperlinkButton Content="Create Account" Click="CreateAccountPage_Click" HorizontalAlignment="Center"/>
+            
+        </StackPanel>
+    </ScrollViewer>
 </Page>

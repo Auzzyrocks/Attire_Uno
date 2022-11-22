@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Settings Button -->
+                <Button Content="Settings" Click="SettingsPage_Click" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                    Height="40" Width="300" Margin="10, 10, 10, 10"/>
 
+                
+                
+                
+                
+                <!-- ForecastButton -->
+                <Button Content="Forecast" Click="ForecastPage_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+                    Height="40" Width="300" Margin="10, 10, 10, 10"/>
+
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

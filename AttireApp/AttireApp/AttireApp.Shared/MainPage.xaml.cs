@@ -15,6 +15,11 @@ namespace AttireApp
             this.InitializeComponent();
         }
 
+        private void HomePage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HomePage));
+        }
+
         private void LinkForecast_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ForecastPage));

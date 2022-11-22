@@ -46,5 +46,10 @@ namespace AttireApp
         {
             LoadWeatherForecast("Nanaimo");
         }
+
+        private void HomePage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HomePage));
+        }
     }
 }

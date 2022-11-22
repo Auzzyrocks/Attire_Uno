@@ -45,8 +45,9 @@
 
             <!-- Submit Button -->
             <Button Content="Submit" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 0, 20, 20"/>
-            <HyperlinkButton Content="Return to Login Page" Click="LoginPage_Click" HorizontalAlignment="Center" Margin="0, 0, 20, 40"/>
+            <HyperlinkButton x:ConnectionId='2' Content="Return to Login Page"                         HorizontalAlignment="Center" Margin="0, 0, 20, 40"/>
         </StackPanel>
     </ScrollViewer>
    
 </Page>
+

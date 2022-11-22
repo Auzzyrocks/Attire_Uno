@@ -1,5 +1,6 @@
 ﻿// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
 namespace AttireApp
@@ -12,6 +13,16 @@ namespace AttireApp
         public HomePage()
         {
             this.InitializeComponent();
+        }
+
+        private void SettingsPage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SettingsPage));
+        }
+
+        private void ForecastPage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ForecastPage));
         }
     }
 }
