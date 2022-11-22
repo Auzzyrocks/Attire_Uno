@@ -395,125 +395,6 @@
           }
         }
       },
-      "sqlite-net-pcl/1.8.116": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.bundle_green": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SQLitePCLRaw.bundle_green/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4",
-          "SQLitePCLRaw.lib.e_sqlite3": "2.0.4",
-          "SQLitePCLRaw.provider.dynamic_cdecl": "2.0.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        }
-      },
-      "SQLitePCLRaw.core/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        }
-      },
-      "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/alpine-x64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "alpine-x64"
-          },
-          "runtimes/linux-arm/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-arm"
-          },
-          "runtimes/linux-arm64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-arm64"
-          },
-          "runtimes/linux-armel/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-armel"
-          },
-          "runtimes/linux-mips64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-mips64"
-          },
-          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-musl-x64"
-          },
-          "runtimes/linux-x64/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/linux-x86/native/libe_sqlite3.so": {
-            "assetType": "native",
-            "rid": "linux-x86"
-          },
-          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-arm/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-arm"
-          },
-          "runtimes/win-arm64/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/e_sqlite3.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "SQLitePCLRaw.provider.dynamic_cdecl/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        }
-      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -609,7 +490,7 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -820,125 +701,10 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Uno.Core/4.0.1": {
+      "Uno.Core.Build/4.0.1": {
         "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Compatibility": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Uno.Core.Extensions/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Collections/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Compatibility/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Disposables/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Equality/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Logging/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "5.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
+        "build": {
+          "build/Uno.Core.Build.targets": {}
         }
       },
       "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
@@ -954,23 +720,6 @@
         },
         "runtime": {
           "lib/net6.0/Uno.Core.Extensions.Logging.Singleton.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Threading/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Immutable": "1.3.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
             "related": ".pdb"
           }
         }
@@ -1539,74 +1288,6 @@
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "sqlite-net-pcl/1.8.116": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.bundle_green": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SQLitePCLRaw.bundle_green/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4",
-          "SQLitePCLRaw.lib.e_sqlite3": "2.0.4",
-          "SQLitePCLRaw.provider.dynamic_cdecl": "2.0.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        }
-      },
-      "SQLitePCLRaw.core/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        }
-      },
-      "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "native": {
-          "runtimes/win-arm64/native/e_sqlite3.dll": {}
-        }
-      },
-      "SQLitePCLRaw.provider.dynamic_cdecl/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        }
-      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1706,7 +1387,7 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -1929,125 +1610,10 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Uno.Core/4.0.1": {
+      "Uno.Core.Build/4.0.1": {
         "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Compatibility": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Uno.Core.Extensions/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Collections/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Compatibility/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Disposables/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Equality/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Logging/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "5.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
+        "build": {
+          "build/Uno.Core.Build.targets": {}
         }
       },
       "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
@@ -2063,23 +1629,6 @@
         },
         "runtime": {
           "lib/net6.0/Uno.Core.Extensions.Logging.Singleton.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Threading/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Immutable": "1.3.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
             "related": ".pdb"
           }
         }
@@ -2648,74 +2197,6 @@
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "sqlite-net-pcl/1.8.116": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.bundle_green": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SQLitePCLRaw.bundle_green/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4",
-          "SQLitePCLRaw.lib.e_sqlite3": "2.0.4",
-          "SQLitePCLRaw.provider.dynamic_cdecl": "2.0.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        }
-      },
-      "SQLitePCLRaw.core/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        }
-      },
-      "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "native": {
-          "runtimes/win-x64/native/e_sqlite3.dll": {}
-        }
-      },
-      "SQLitePCLRaw.provider.dynamic_cdecl/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        }
-      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2815,7 +2296,7 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -3038,125 +2519,10 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Uno.Core/4.0.1": {
+      "Uno.Core.Build/4.0.1": {
         "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Compatibility": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Uno.Core.Extensions/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Collections/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Compatibility/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Disposables/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Equality/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Logging/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "5.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
+        "build": {
+          "build/Uno.Core.Build.targets": {}
         }
       },
       "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
@@ -3172,23 +2538,6 @@
         },
         "runtime": {
           "lib/net6.0/Uno.Core.Extensions.Logging.Singleton.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Threading/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Immutable": "1.3.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
             "related": ".pdb"
           }
         }
@@ -3757,74 +3106,6 @@
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
-      "sqlite-net-pcl/1.8.116": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.bundle_green": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLite-net.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SQLitePCLRaw.bundle_green/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4",
-          "SQLitePCLRaw.lib.e_sqlite3": "2.0.4",
-          "SQLitePCLRaw.provider.dynamic_cdecl": "2.0.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll": {},
-          "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll": {}
-        }
-      },
-      "SQLitePCLRaw.core/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
-        }
-      },
-      "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/_._": {}
-        },
-        "native": {
-          "runtimes/win-x86/native/e_sqlite3.dll": {}
-        }
-      },
-      "SQLitePCLRaw.provider.dynamic_cdecl/2.0.4": {
-        "type": "package",
-        "dependencies": {
-          "SQLitePCLRaw.core": "2.0.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
-        }
-      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3924,7 +3205,7 @@
           "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
-      "System.Memory/4.5.3": {
+      "System.Memory/4.5.2": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -4147,125 +3428,10 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Uno.Core/4.0.1": {
+      "Uno.Core.Build/4.0.1": {
         "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Compatibility": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Uno.Core.Extensions/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Collections/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Compatibility/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "5.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Disposables/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Equality/4.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Logging/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "5.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "related": ".pdb"
-          }
+        "build": {
+          "build/Uno.Core.Build.targets": {}
         }
       },
       "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
@@ -4281,23 +3447,6 @@
         },
         "runtime": {
           "lib/net6.0/Uno.Core.Extensions.Logging.Singleton.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Threading/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections.Immutable": "1.3.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
             "related": ".pdb"
           }
         }
@@ -6117,101 +5266,12 @@
         "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
-    "sqlite-net-pcl/1.8.116": {
-      "sha512": "W0NuwAOVVAR9LP4eZwNBIrim1p3EN7t8iNfSHXEhtzKAd4YyItekoQ8NyWYs4faVSrN2KZr/P5u4hycCjKKexg==",
-      "type": "package",
-      "path": "sqlite-net-pcl/1.8.116",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "Logo-low.png",
-        "lib/netstandard2.0/SQLite-net.dll",
-        "lib/netstandard2.0/SQLite-net.xml",
-        "sqlite-net-pcl.1.8.116.nupkg.sha512",
-        "sqlite-net-pcl.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.bundle_green/2.0.4": {
-      "sha512": "ubFgOHDmtTcq2LU7Ss10yHnFVMm2rFVr65Ggi+Mh514KjGx4pal98P2zSvZtWf3wbtJw6G1InBgeozBtnpEfKQ==",
-      "type": "package",
-      "path": "sqlitepclraw.bundle_green/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
-        "lib/Xamarin.iOS10/SQLitePCLRaw.nativelibrary.dll",
-        "lib/net461/SQLitePCLRaw.batteries_v2.dll",
-        "lib/net461/SQLitePCLRaw.nativelibrary.dll",
-        "lib/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll",
-        "lib/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll",
-        "lib/netstandard2.0/SQLitePCLRaw.batteries_v2.dll",
-        "sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
-        "sqlitepclraw.bundle_green.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.core/2.0.4": {
-      "sha512": "4XlDZpDAsboMD6qZQcz9AaKblKDUTVHF+8f3lvbP7QjoqSRr2Xc0Lm34IK2pjRIYnyFLhI3yOJ5YWfOiCid2yg==",
-      "type": "package",
-      "path": "sqlitepclraw.core/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/SQLitePCLRaw.core.dll",
-        "sqlitepclraw.core.2.0.4.nupkg.sha512",
-        "sqlitepclraw.core.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.lib.e_sqlite3/2.0.4": {
-      "sha512": "oetvmtDZOE4Nnrtxd8Trapl9geBiu0rDCUXff46qGYjnUwzaU1mZ3OHnfR402tl32rx8gBWg3n5OBRaPJRbsGw==",
-      "type": "package",
-      "path": "sqlitepclraw.lib.e_sqlite3/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net461/SQLitePCLRaw.lib.e_sqlite3.targets",
-        "lib/net461/_._",
-        "lib/netstandard2.0/_._",
-        "runtimes/alpine-x64/native/libe_sqlite3.so",
-        "runtimes/linux-arm/native/libe_sqlite3.so",
-        "runtimes/linux-arm64/native/libe_sqlite3.so",
-        "runtimes/linux-armel/native/libe_sqlite3.so",
-        "runtimes/linux-mips64/native/libe_sqlite3.so",
-        "runtimes/linux-musl-x64/native/libe_sqlite3.so",
-        "runtimes/linux-x64/native/libe_sqlite3.so",
-        "runtimes/linux-x86/native/libe_sqlite3.so",
-        "runtimes/osx-x64/native/libe_sqlite3.dylib",
-        "runtimes/win-arm/native/e_sqlite3.dll",
-        "runtimes/win-arm64/native/e_sqlite3.dll",
-        "runtimes/win-x64/native/e_sqlite3.dll",
-        "runtimes/win-x86/native/e_sqlite3.dll",
-        "runtimes/win10-arm/nativeassets/uap10.0/e_sqlite3.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/e_sqlite3.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/e_sqlite3.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/e_sqlite3.dll",
-        "sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
-        "sqlitepclraw.lib.e_sqlite3.nuspec"
-      ]
-    },
-    "SQLitePCLRaw.provider.dynamic_cdecl/2.0.4": {
-      "sha512": "AY6+vv/4ji1mCkLrS6HP/88rHT9YFKRyg3LUj8RyIk6imJMUFdQDiP8rK8gq0a/0FbqspLjK1t7rtKcr7FXRYA==",
-      "type": "package",
-      "path": "sqlitepclraw.provider.dynamic_cdecl/2.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll",
-        "sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
-        "sqlitepclraw.provider.dynamic_cdecl.nuspec"
-      ]
-    },
     "System.Collections/4.3.0": {
       "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
       "path": "system.collections/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6279,7 +5339,6 @@
       "path": "system.collections.immutable/1.3.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
@@ -6296,7 +5355,6 @@
       "path": "system.diagnostics.debug/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6364,7 +5422,6 @@
       "path": "system.globalization/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6432,7 +5489,6 @@
       "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6513,7 +5569,6 @@
       "path": "system.linq/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6579,10 +5634,10 @@
         "system.linq.nuspec"
       ]
     },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+    "System.Memory/4.5.2": {
+      "sha512": "fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
       "type": "package",
-      "path": "system.memory/4.5.3",
+      "path": "system.memory/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6594,7 +5649,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.4.5.2.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -6667,7 +5722,6 @@
       "path": "system.reflection/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6748,7 +5802,6 @@
       "path": "system.reflection.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6805,7 +5858,6 @@
       "path": "system.resources.resourcemanager/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6862,7 +5914,6 @@
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6979,7 +6030,6 @@
       "path": "system.runtime.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7121,7 +6171,6 @@
       "path": "system.text.encoding/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7291,7 +6340,6 @@
       "path": "system.threading/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7362,7 +6410,6 @@
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -7468,249 +6515,19 @@
         "version.txt"
       ]
     },
-    "Uno.Core/4.0.1": {
-      "sha512": "PrMXmLbXMWlUTM+7gNyNrERNqwamH8oqekvu5AlKZ/XTCUMWfFDnWEWw69PvLwqLC/ot4NLOfJAm6W4qRlb8Mg==",
+    "Uno.Core.Build/4.0.1": {
+      "sha512": "NyjyS/usvM0TU9fBkJ54l7o4lNeb2kSAL2PWOGW3KiPv+feKWpiJc0a6x2pH/TLC9PqQZDgK+24vheOA8gUfgw==",
       "type": "package",
-      "path": "uno.core/4.0.1",
+      "path": "uno.core.build/4.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net46/Uno.Core.dll",
-        "lib/net46/Uno.Core.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.dll",
-        "lib/net5.0/Uno.Core.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.dll",
-        "lib/net6.0/Uno.Core.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.dll",
-        "lib/netstandard2.0/Uno.Core.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.dll",
-        "lib/netstandard2.1/Uno.Core.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.dll",
-        "lib/uap10.0.17763/Uno.Core.pdb",
-        "lib/uap10.0.17763/Uno.Core.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.dll",
-        "lib/uap10.0.19041/Uno.Core.pdb",
-        "lib/uap10.0.19041/Uno.Core.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
+        "build/CommonServiceLocator.dll",
+        "build/Uno.Core.Build.targets",
+        "build/Uno.Core.dll",
         "uno-logo.png",
-        "uno.core.4.0.1.nupkg.sha512",
-        "uno.core.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions/4.0.1": {
-      "sha512": "3J/v/JCVKBj5cywuUsv9V4Y9nod7SFC/h9QCWAMwy+FTr8Fb5n3j8b+HyLIrZJHewW7+pxQ/1TZI5gfeyO4cIA==",
-      "type": "package",
-      "path": "uno.core.extensions/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.dll",
-        "lib/net46/Uno.Core.Extensions.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.Extensions.dll",
-        "lib/net5.0/Uno.Core.Extensions.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.Extensions.dll",
-        "lib/net6.0/Uno.Core.Extensions.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.Extensions.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.Extensions.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.Extensions.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.Extensions.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
-        "uno-logo.png",
-        "uno.core.extensions.4.0.1.nupkg.sha512",
-        "uno.core.extensions.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions.Collections/4.0.1": {
-      "sha512": "MvwbLiM1DvwTDtgkUZMcqg4/YbkHLIdx1NX1j3rZzFn6XKpZj1yx+oUYwJYtxKtmZ2qOh/f5SApiiRaRPFHgVQ==",
-      "type": "package",
-      "path": "uno.core.extensions.collections/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.Collections.dll",
-        "lib/net46/Uno.Core.Extensions.Collections.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.Extensions.Collections.dll",
-        "lib/net5.0/Uno.Core.Extensions.Collections.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.Extensions.Collections.dll",
-        "lib/net6.0/Uno.Core.Extensions.Collections.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.Extensions.Collections.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.Collections.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.Extensions.Collections.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.Collections.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Collections.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Collections.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Collections.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Collections.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Collections.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Collections.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
-        "uno-logo.png",
-        "uno.core.extensions.collections.4.0.1.nupkg.sha512",
-        "uno.core.extensions.collections.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions.Compatibility/4.0.1": {
-      "sha512": "L/7ykjUwrKFj9i/cwipsbr9RZ685pSrum573c2m0Owd5QvwSFS7UhW+2I/SkLJ54E6JpAfRQhULCXGcwt/Slsg==",
-      "type": "package",
-      "path": "uno.core.extensions.compatibility/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.Compatibility.dll",
-        "lib/net46/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.Extensions.Compatibility.dll",
-        "lib/net5.0/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.Extensions.Compatibility.dll",
-        "lib/net6.0/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.Extensions.Compatibility.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.Extensions.Compatibility.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Compatibility.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Compatibility.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Compatibility.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Compatibility.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Compatibility.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
-        "uno-logo.png",
-        "uno.core.extensions.compatibility.4.0.1.nupkg.sha512",
-        "uno.core.extensions.compatibility.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions.Disposables/4.0.1": {
-      "sha512": "zwyHrTi1F4QARrYElAVmXbyeMssh47clUwKncI1xRhUsM+Wl8+2uVP36ZH+GzYmRJbotTFmP6D7kcGjJE0pMGw==",
-      "type": "package",
-      "path": "uno.core.extensions.disposables/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.Disposables.dll",
-        "lib/net46/Uno.Core.Extensions.Disposables.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.Extensions.Disposables.dll",
-        "lib/net5.0/Uno.Core.Extensions.Disposables.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.Extensions.Disposables.dll",
-        "lib/net6.0/Uno.Core.Extensions.Disposables.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.Extensions.Disposables.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.Disposables.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.Extensions.Disposables.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.Disposables.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Disposables.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Disposables.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Disposables.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Disposables.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Disposables.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Disposables.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
-        "uno-logo.png",
-        "uno.core.extensions.disposables.4.0.1.nupkg.sha512",
-        "uno.core.extensions.disposables.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions.Equality/4.0.1": {
-      "sha512": "nuHZsqZJ1MlUMNY0Ju7ZxNvg8kKkAzE0H0XGw2bc7Z5DNyuG4NiBxlA/3CSSk6Y6pmPg2kfRaIs4ai+Wz9Lp+g==",
-      "type": "package",
-      "path": "uno.core.extensions.equality/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.Equality.dll",
-        "lib/net46/Uno.Core.Extensions.Equality.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.Extensions.Equality.dll",
-        "lib/net5.0/Uno.Core.Extensions.Equality.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.Extensions.Equality.dll",
-        "lib/net6.0/Uno.Core.Extensions.Equality.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.Extensions.Equality.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.Equality.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.Extensions.Equality.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.Equality.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Equality.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Equality.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Equality.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Equality.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Equality.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Equality.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
-        "uno-logo.png",
-        "uno.core.extensions.equality.4.0.1.nupkg.sha512",
-        "uno.core.extensions.equality.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions.Logging/4.0.1": {
-      "sha512": "f4nnnXbdiJWKKOfo1uJnZcAl36GvTuuuyG80VKA5nfKB7UpBMU1d/lB70TcOYESSBpT17xowmwcyB8hb6+i9ZA==",
-      "type": "package",
-      "path": "uno.core.extensions.logging/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.Logging.dll",
-        "lib/net46/Uno.Core.Extensions.Logging.pdb",
-        "lib/net46/Uno.Core.xml",
-        "lib/net5.0/Uno.Core.Extensions.Logging.dll",
-        "lib/net5.0/Uno.Core.Extensions.Logging.pdb",
-        "lib/net5.0/Uno.Core.xml",
-        "lib/net6.0/Uno.Core.Extensions.Logging.dll",
-        "lib/net6.0/Uno.Core.Extensions.Logging.pdb",
-        "lib/net6.0/Uno.Core.xml",
-        "lib/netstandard2.0/Uno.Core.Extensions.Logging.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.Logging.pdb",
-        "lib/netstandard2.0/Uno.Core.xml",
-        "lib/netstandard2.1/Uno.Core.Extensions.Logging.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.Logging.pdb",
-        "lib/netstandard2.1/Uno.Core.xml",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Logging.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Logging.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Logging.pri",
-        "lib/uap10.0.17763/Uno.Core.xml",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Logging.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Logging.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Logging.pri",
-        "lib/uap10.0.19041/Uno.Core.xml",
-        "uno-logo.png",
-        "uno.core.extensions.logging.4.0.1.nupkg.sha512",
-        "uno.core.extensions.logging.nuspec"
+        "uno.core.build.4.0.1.nupkg.sha512",
+        "uno.core.build.nuspec"
       ]
     },
     "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
@@ -7746,34 +6563,6 @@
         "uno-logo.png",
         "uno.core.extensions.logging.singleton.4.0.1.nupkg.sha512",
         "uno.core.extensions.logging.singleton.nuspec"
-      ]
-    },
-    "Uno.Core.Extensions.Threading/4.0.1": {
-      "sha512": "lrsv/mr1UEus2aaFuab6I+nIXQVOWbbEAb9vLp9+fegMHo8r8P7mxDpmZ5JoPi1todZRzgla18xgTBWG3us7DA==",
-      "type": "package",
-      "path": "uno.core.extensions.threading/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Uno.Core.Extensions.Threading.dll",
-        "lib/net46/Uno.Core.Extensions.Threading.pdb",
-        "lib/net5.0/Uno.Core.Extensions.Threading.dll",
-        "lib/net5.0/Uno.Core.Extensions.Threading.pdb",
-        "lib/net6.0/Uno.Core.Extensions.Threading.dll",
-        "lib/net6.0/Uno.Core.Extensions.Threading.pdb",
-        "lib/netstandard2.0/Uno.Core.Extensions.Threading.dll",
-        "lib/netstandard2.0/Uno.Core.Extensions.Threading.pdb",
-        "lib/netstandard2.1/Uno.Core.Extensions.Threading.dll",
-        "lib/netstandard2.1/Uno.Core.Extensions.Threading.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Threading.dll",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Threading.pdb",
-        "lib/uap10.0.17763/Uno.Core.Extensions.Threading.pri",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Threading.dll",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Threading.pdb",
-        "lib/uap10.0.19041/Uno.Core.Extensions.Threading.pri",
-        "uno-logo.png",
-        "uno.core.extensions.threading.4.0.1.nupkg.sha512",
-        "uno.core.extensions.threading.nuspec"
       ]
     },
     "Uno.Diagnostics.Eventing/2.0.1": {
@@ -9073,33 +7862,32 @@
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.755",
       "Microsoft.WindowsAppSDK >= 1.2.221116.1",
       "Refractored.MvvmHelpers >= 1.6.2",
-      "Uno.Core >= 4.0.1",
+      "Uno.Core.Build >= 4.0.1",
       "Uno.Core.Extensions.Logging.Singleton >= 4.0.1",
-      "Uno.WinUI >= 4.6.19",
-      "sqlite-net-pcl >= 1.8.116"
+      "Uno.WinUI >= 4.6.19"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Smile\\.nuget\\packages\\": {},
+    "C:\\Users\\shoulau\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+      "projectUniqueName": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
       "projectName": "AttireApp.Windows",
-      "projectPath": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
-      "packagesPath": "C:\\Users\\Smile\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
+      "projectPath": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+      "packagesPath": "C:\\Users\\shoulau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\NuGet.Config",
-        "C:\\Users\\Smile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shoulau\\Source\\Repos\\attire_uno\\AttireApp\\NuGet.Config",
+        "C:\\Users\\shoulau\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9148,7 +7936,7 @@
             "target": "Package",
             "version": "[1.6.2, )"
           },
-          "Uno.Core": {
+          "Uno.Core.Build": {
             "target": "Package",
             "version": "[4.0.1, )"
           },
@@ -9159,10 +7947,6 @@
           "Uno.WinUI": {
             "target": "Package",
             "version": "[4.6.19, )"
-          },
-          "sqlite-net-pcl": {
-            "target": "Package",
-            "version": "[1.8.116, )"
           }
         },
         "imports": [

@@ -13,7 +13,7 @@
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.221116.1",
           "Refractored.MvvmHelpers": "1.6.2",
-          "Uno.Core": "4.0.1",
+          "Uno.Core.Build": "4.0.1",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
           "Uno.WinUI": "4.6.19",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.22000.25"
@@ -443,92 +443,7 @@
         }
       },
       "System.ValueTuple/4.5.0": {},
-      "Uno.Core/4.0.1": {
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "7.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Compatibility": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions/4.0.1": {
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Collections/4.0.1": {
-        "dependencies": {
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Collections.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Compatibility/4.0.1": {
-        "dependencies": {
-          "CommonServiceLocator": "2.0.5",
-          "Microsoft.Extensions.Logging": "7.0.0",
-          "Uno.Core.Extensions": "4.0.1",
-          "Uno.Core.Extensions.Collections": "4.0.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1",
-          "Uno.Core.Extensions.Equality": "4.0.1",
-          "Uno.Core.Extensions.Logging": "4.0.1",
-          "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Core.Extensions.Threading": "4.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Compatibility.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Disposables/4.0.1": {
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Disposables.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Equality/4.0.1": {
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Equality.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Logging/4.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "7.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Logging.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
+      "Uno.Core.Build/4.0.1": {},
       "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
         "dependencies": {
           "CommonServiceLocator": "2.0.5",
@@ -536,18 +451,6 @@
         },
         "runtime": {
           "lib/net6.0/Uno.Core.Extensions.Logging.Singleton.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Uno.Core.Extensions.Threading/4.0.1": {
-        "dependencies": {
-          "System.Collections.Immutable": "1.3.1",
-          "Uno.Core.Extensions.Disposables": "4.0.1"
-        },
-        "runtime": {
-          "lib/net6.0/Uno.Core.Extensions.Threading.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -880,54 +783,12 @@
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
-    "Uno.Core/4.0.1": {
+    "Uno.Core.Build/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PrMXmLbXMWlUTM+7gNyNrERNqwamH8oqekvu5AlKZ/XTCUMWfFDnWEWw69PvLwqLC/ot4NLOfJAm6W4qRlb8Mg==",
-      "path": "uno.core/4.0.1",
-      "hashPath": "uno.core.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3J/v/JCVKBj5cywuUsv9V4Y9nod7SFC/h9QCWAMwy+FTr8Fb5n3j8b+HyLIrZJHewW7+pxQ/1TZI5gfeyO4cIA==",
-      "path": "uno.core.extensions/4.0.1",
-      "hashPath": "uno.core.extensions.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions.Collections/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-MvwbLiM1DvwTDtgkUZMcqg4/YbkHLIdx1NX1j3rZzFn6XKpZj1yx+oUYwJYtxKtmZ2qOh/f5SApiiRaRPFHgVQ==",
-      "path": "uno.core.extensions.collections/4.0.1",
-      "hashPath": "uno.core.extensions.collections.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions.Compatibility/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-L/7ykjUwrKFj9i/cwipsbr9RZ685pSrum573c2m0Owd5QvwSFS7UhW+2I/SkLJ54E6JpAfRQhULCXGcwt/Slsg==",
-      "path": "uno.core.extensions.compatibility/4.0.1",
-      "hashPath": "uno.core.extensions.compatibility.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions.Disposables/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zwyHrTi1F4QARrYElAVmXbyeMssh47clUwKncI1xRhUsM+Wl8+2uVP36ZH+GzYmRJbotTFmP6D7kcGjJE0pMGw==",
-      "path": "uno.core.extensions.disposables/4.0.1",
-      "hashPath": "uno.core.extensions.disposables.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions.Equality/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nuHZsqZJ1MlUMNY0Ju7ZxNvg8kKkAzE0H0XGw2bc7Z5DNyuG4NiBxlA/3CSSk6Y6pmPg2kfRaIs4ai+Wz9Lp+g==",
-      "path": "uno.core.extensions.equality/4.0.1",
-      "hashPath": "uno.core.extensions.equality.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions.Logging/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-f4nnnXbdiJWKKOfo1uJnZcAl36GvTuuuyG80VKA5nfKB7UpBMU1d/lB70TcOYESSBpT17xowmwcyB8hb6+i9ZA==",
-      "path": "uno.core.extensions.logging/4.0.1",
-      "hashPath": "uno.core.extensions.logging.4.0.1.nupkg.sha512"
+      "sha512": "sha512-NyjyS/usvM0TU9fBkJ54l7o4lNeb2kSAL2PWOGW3KiPv+feKWpiJc0a6x2pH/TLC9PqQZDgK+24vheOA8gUfgw==",
+      "path": "uno.core.build/4.0.1",
+      "hashPath": "uno.core.build.4.0.1.nupkg.sha512"
     },
     "Uno.Core.Extensions.Logging.Singleton/4.0.1": {
       "type": "package",
@@ -935,13 +796,6 @@
       "sha512": "sha512-aO2ILiPCV4HKBB5Ckb6tuHM6UKPmOK2B8KKHJDWaB3g2EBIT25xudsjPFE/sUsLfy3pvJIU6RDGU4ImyVW1lFg==",
       "path": "uno.core.extensions.logging.singleton/4.0.1",
       "hashPath": "uno.core.extensions.logging.singleton.4.0.1.nupkg.sha512"
-    },
-    "Uno.Core.Extensions.Threading/4.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lrsv/mr1UEus2aaFuab6I+nIXQVOWbbEAb9vLp9+fegMHo8r8P7mxDpmZ5JoPi1todZRzgla18xgTBWG3us7DA==",
-      "path": "uno.core.extensions.threading/4.0.1",
-      "hashPath": "uno.core.extensions.threading.4.0.1.nupkg.sha512"
     },
     "Uno.Diagnostics.Eventing/2.0.1": {
       "type": "package",
