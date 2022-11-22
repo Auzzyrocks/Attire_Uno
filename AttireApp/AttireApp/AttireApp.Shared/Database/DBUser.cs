@@ -5,12 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Attire.Database.DBUser
+namespace AttireApp.Database.DBUser
 {
+    [Table("User")]
     public class User
     {
         //properties of a user object
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey, AutoIncrement, Column("userID")]
         private int userID { get; set; }
 
         private string username;

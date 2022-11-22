@@ -1,10 +1,12 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AttireApp.Database;
+using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+
 
 namespace AttireApp
 {
@@ -21,6 +23,7 @@ namespace AttireApp
         /// </summary>
         public App()
         {
+            
             InitializeLogging();
 
             this.InitializeComponent();

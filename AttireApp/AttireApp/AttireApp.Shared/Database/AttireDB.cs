@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Attire.Database
+namespace AttireApp.Database
 {
     public class AttireDB
     {
         SQLiteAsyncConnection DB;
-
         public AttireDB()
         {
+            this.Init();
         }
 
         async Task Init()

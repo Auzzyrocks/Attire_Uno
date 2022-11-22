@@ -20,10 +20,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CreateAccountPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Accounts.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Database\constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DBUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\Login.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Database\UserTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\AttireDB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ForecastPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ForgotPasswordPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HomePage.xaml.cs" />
