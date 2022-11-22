@@ -25,6 +25,7 @@ namespace AttireApp
 
         public ForecastPage()
         {
+         
             WeatherHandlerAPI.InitializeClient();
             
             LoadWeatherForecast();

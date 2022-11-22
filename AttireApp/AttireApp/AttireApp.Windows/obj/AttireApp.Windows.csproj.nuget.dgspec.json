@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\Desktop\\AttireProject\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj": {}
+    "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\Desktop\\AttireProject\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj": {
+    "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\Desktop\\AttireProject\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+        "projectUniqueName": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
         "projectName": "AttireApp.Windows",
-        "projectPath": "C:\\Users\\brand\\Desktop\\AttireProject\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
-        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\Desktop\\AttireProject\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
+        "projectPath": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+        "packagesPath": "C:\\Users\\Smile\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\brand\\Desktop\\AttireProject\\attire_uno\\AttireApp\\NuGet.Config",
-          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\NuGet.Config",
+          "C:\\Users\\Smile\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows10.0.19041.0"
@@ -51,7 +50,7 @@
           "dependencies": {
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Windows.CsWinRT": {
               "target": "Package",
@@ -69,13 +68,9 @@
               "target": "Package",
               "version": "[1.6.2, )"
             },
-            "Uno.Core.Build": {
+            "Uno.Core": {
               "target": "Package",
               "version": "[4.0.1, )"
-            },
-            "Refractored.MvvmHelpers": {
-              "target": "Package",
-              "version": "[1.6.2, )"
             },
             "Uno.Core.Extensions.Logging.Singleton": {
               "target": "Package",
@@ -84,6 +79,10 @@
             "Uno.WinUI": {
               "target": "Package",
               "version": "[4.6.19, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

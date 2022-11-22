@@ -11,16 +11,29 @@ namespace AttireApp.Database.DBUser
     public class User
     {
         //properties of a user object
-        [PrimaryKey, AutoIncrement, Column("userID")]
-        private int userID { get; set; }
+        [PrimaryKey, AutoIncrement, Column("userID"), Unique]
+        public int userID { get; set; }
 
-        private string username;
-        private string hashPass;
-        private string hashEmail;
-        private string firstName;
-        private string lastName;
-        private int location;
-        private bool tempUnit;
+        [MaxLength(25), Unique]
+        public string UserName { get; set; }
+
+        [MaxLength(25)]
+        public string HashPass { get; set;}
+
+        [MaxLength(64), Unique]
+        public string hashEmail { get; set; }
+        
+        [MaxLength(20)]
+        public string firstName { get; set; }
+
+        [MaxLength(20)]
+        public string lastName { get; set; }
+        
+        [MaxLength(20)]
+        public int location { get;  set; }
+
+        [MaxLength(20)]
+        public bool tempUnit { get; set; }
 
         //default constructor (used in creating db)
         public User()
@@ -28,22 +41,11 @@ namespace AttireApp.Database.DBUser
         }
 
         //getters for user object properties
-        public int get_UserID(){
+        public int get_UserID()
+        {
             return userID;
         }
-
-        public string get_hashPass() { 
-            return hashPass; 
-        }
-
-        public string get_hashEmail()
-        {
-            return hashEmail;
-        }
-
-        public string get_username(){
-            return username;
-        }
+    
 
 		public string get_first_name(){
             return firstName;
@@ -52,8 +54,8 @@ namespace AttireApp.Database.DBUser
 		public string get_last_name(){
             return lastName;
         }
-
-		public string get_location(){
+        
+	/*	public string get_location(){
             if(location == 0){
                 return "Nanaimo";
             }else if(location == 1){
@@ -66,10 +68,7 @@ namespace AttireApp.Database.DBUser
                 return "No location specified";
             }
         }
-
-		public bool get_temp_unit(){
-            return tempUnit;
-        }
+        */
 
        //setters for user object. these will call db for info and set it to the class. (will be used in constructor)
         public string set_username(int userID){return "userID";}
