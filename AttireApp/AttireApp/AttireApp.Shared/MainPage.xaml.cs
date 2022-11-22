@@ -19,5 +19,12 @@ namespace AttireApp
         {
             this.Frame.Navigate(typeof(ForecastPage));
         }
+        
+        private void CreateAccountPage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CreateAccountPage));
+        }
+
+       
     }
 }

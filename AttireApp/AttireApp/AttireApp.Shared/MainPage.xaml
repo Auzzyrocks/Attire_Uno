@@ -23,5 +23,6 @@
         <!-- Send Button -->
         <Button Content="Log In" HorizontalAlignment="Center" Height="40" Width="300"/>
         <HyperlinkButton Content="Link to Forecast Page" Click="LinkForecast_Click" HorizontalAlignment="Center"/>
+        <HyperlinkButton Content="Create Account" Click="CreateAccountPage_Click" HorizontalAlignment="Center"/>
     </StackPanel>
 </Page>
