@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "AttireApp.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}
