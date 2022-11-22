@@ -1,0 +1,6 @@
+# ignore all files in .vs directory
+AttireApp/.vs/*
+
+# All files in windows 
+AttireApp/AttireApp/AttireApp.Windows/*
+

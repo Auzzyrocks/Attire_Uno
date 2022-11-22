@@ -1,1 +1,0 @@
-C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Windows\AttireApp.Windows.csproj;x86
