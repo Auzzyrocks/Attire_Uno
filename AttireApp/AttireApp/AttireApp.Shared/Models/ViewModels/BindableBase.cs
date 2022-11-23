@@ -1,11 +1,17 @@
-﻿using Microsoft.UI.Dispatching;
-using System;
+﻿/*
+ * Author: Brandon Cosh
+ * Date: November 22, 2022
+ * 
+ * Description:
+ *      An abstract class that implements the INotifyPropertyChanged interface to alert the client whenever properties change to update UI.
+ *      Whenever we need to add binding to a specific page (eg. Forecast Page) we should create a new class [name]ViewModel.cs and inherit 
+ *      from this class. This allows the UI to update when properties are changed on the back end, without it changes won't show.
+ *      
+ *      SEE ForecastViewModel.cs for an example
+ */
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
-using Windows.ApplicationModel.Core;
-using Windows.UI.Core;
 
 namespace AttireApp.Models.ViewModels
 {

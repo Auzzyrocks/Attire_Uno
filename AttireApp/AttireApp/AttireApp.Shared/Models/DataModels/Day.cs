@@ -1,7 +1,11 @@
-﻿using AttireApp.Models.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿/*
+ * Author: Brandon Cosh
+ * Date: November 22, 2022
+ * 
+ * Description:
+ *      A 'model' to consume Json weather API from weatherAPI.com
+ */
+using AttireApp.Models.ViewModels;
 using System.Text.Json.Serialization;
 
 namespace AttireApp.Models.DataModels

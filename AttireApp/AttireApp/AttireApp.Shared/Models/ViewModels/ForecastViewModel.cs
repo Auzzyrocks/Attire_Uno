@@ -1,32 +1,34 @@
-﻿using System.Collections.ObjectModel;
-using System.Linq;
+﻿/*
+ * Author: Brandon Cosh
+ * Date: November 22, 2022
+ * 
+ * Description:
+ *      View model used to display weather forecast information that inherits from BindableBase which implements INotifyPropertyChanged.
+ */
+using System.Collections.ObjectModel;
 using AttireApp.Models.DataModels;
 using AttireApp.WebServices;
-using Uno.Extensions.Specialized;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System;
-using Microsoft.UI.Xaml.Data;
 
 namespace AttireApp.Models.ViewModels
 {
     class ForecastViewModel : BindableBase
     {
-        private bool _isBusy;
-        private string _citySelected = String.Empty; // = "Nanaimo";
-        private ObservableCollection<String> cityOptions = new ObservableCollection<String>()
+        private ObservableCollection<String> cityOptions = new()
         {
             "Nanaimo", "Vancouver", "Toronto", "Sydney"
 
         };
-        private RootWeatherData _weatherData = new RootWeatherData();
 
+        private bool _isBusy;
         public bool IsBusy
         {
             get => _isBusy;
             set => SetMyProperty(ref _isBusy, value);
         }
 
+        private string _citySelected = String.Empty;
         public string CitySelected
         {
             get => _citySelected;
@@ -39,6 +41,7 @@ namespace AttireApp.Models.ViewModels
             set => SetMyProperty(ref cityOptions, value);
         }
 
+        private RootWeatherData _weatherData = new();
         public RootWeatherData WeatherData
         {
             get => _weatherData;
@@ -59,7 +62,7 @@ namespace AttireApp.Models.ViewModels
                 try
                 {
                     IsBusy = true;
-                    var result = await ForecastSearchApi.CallWeatherApi(_citySelected); //.ConfigureAwait(false);
+                    var result = await ForecastSearchApi.CreateApiUrl(_citySelected);
                     if (result != null)
                     {
                         WeatherData = result;
