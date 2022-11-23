@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-22T21:39:34.412</Modified>
+      <Modified>2022-11-23T00:21:27.551</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-11-22T21:39:34.288</Modified>
+      <Modified>2022-11-23T00:21:27.500</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.runtimeconfig.json">
       <PackagePath>AttireApp.Windows.runtimeconfig.json</PackagePath>
-      <Modified>2022-11-22T21:39:34.120</Modified>
+      <Modified>2022-11-23T00:04:42.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.dll">
       <PackagePath>AttireApp.Windows.dll</PackagePath>
-      <Modified>2022-11-22T21:39:33.755</Modified>
+      <Modified>2022-11-23T00:21:27.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>AttireApp.Windows.exe</PackagePath>
-      <Modified>2022-11-22T21:39:34.109</Modified>
+      <Modified>2022-11-23T00:21:27.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.deps.json">
       <PackagePath>AttireApp.Windows.deps.json</PackagePath>
-      <Modified>2022-11-22T21:39:34.016</Modified>
+      <Modified>2022-11-23T00:04:42.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\brand\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
