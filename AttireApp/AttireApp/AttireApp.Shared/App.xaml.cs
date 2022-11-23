@@ -26,6 +26,7 @@ namespace AttireApp
         {
             AttireDB data = new AttireDB();
             data.InitializeDB();
+
             
             InitializeLogging();
 

@@ -2,6 +2,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,30 +15,40 @@ namespace AttireApp.Database.DBUser
         [PrimaryKey, AutoIncrement, Column("userID"), Unique]
         public int userID { get; set; }
 
-        [MaxLength(25), Unique]
+        [MaxLength(25), Unique, Column("userName")]
         public string UserName { get; set; }
 
-        [MaxLength(25)]
-        public string HashPass { get; set;}
+        [MaxLength(64), Column("hashEmail")]
+        public byte[] HashPass { get; set;}
 
-        [MaxLength(64), Unique]
+        [MaxLength(64), Unique, Column("hashEmail")]
         public string hashEmail { get; set; }
         
-        [MaxLength(20)]
+        [MaxLength(20), Column("firstName")]
         public string firstName { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(20), Column("lastName")]
         public string lastName { get; set; }
         
-        [MaxLength(20)]
+        [MaxLength(20), Column("Location")]
         public int location { get;  set; }
 
-        [MaxLength(20)]
+        [MaxLength(20), Column("tempUnit")]
         public bool tempUnit { get; set; }
 
         //default constructor (used in creating db)
-        public User()
+        public User() { }
+        public User(string UserName, string PassWord)
         {
+            using (SHA256 mySHA = SHA256.Create())
+            {
+                byte[] pass = Encoding.UTF8.GetBytes(PassWord);
+                this.UserName = UserName;
+                this.HashPass = mySHA.ComputeHash(pass);
+            }
+                
+                
+
         }
 
         //getters for user object properties

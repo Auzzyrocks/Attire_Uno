@@ -1,4 +1,5 @@
-﻿using AttireApp.Database.DBUser;
+﻿using Attire.DataBase;
+using AttireApp.Database.DBUser;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace AttireApp.Database
             await DB.CreateTableAsync<DBUser.User>();
         }
 
-        public async Task AddNewUser(string username, string hashpass)
+        public async Task AddNewUser(string username, string password)
         {
             int result;
             try {
@@ -43,11 +44,12 @@ namespace AttireApp.Database
                 {
                     throw new Exception("Invalid Username");
                 }
-                else if (string.IsNullOrEmpty(hashpass) || string.IsNullOrWhiteSpace(hashpass))
+                else if (string.IsNullOrEmpty(password) || string.IsNullOrWhiteSpace(password))
                 {
                     throw new Exception("Password Cannot be Empty");
                 }
-                result = await DB.InsertAsync(new User { UserName = username, HashPass = hashpass });
+                //byte[] bytePass =  Encoding.UTF8.GetBytes(password);
+                result = await DB.InsertAsync(new User { UserName = username, HashPass = Login.hash_pass(password) });
                 StatusMessage = string.Format("{0} record(s) added [UserName: {1})", result, username);
 
             }
