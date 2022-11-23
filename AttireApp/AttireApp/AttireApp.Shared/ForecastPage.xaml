@@ -102,12 +102,12 @@
                     </GridView.ItemTemplate>
                 </GridView>
 
-                <!-- Busy Overlay -->
-                <Grid Background="Gray" Opacity="0.75" Visibility="{x:Bind ViewModel.IsBusy, Mode=OneWay}" Grid.Row="1" Grid.RowSpan="4">
-                    <TextBlock Text="Downloading data..." Style="{StaticResource TitleTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </Grid>
 
             </Grid>
+                <!-- Busy Overlay -->
+                <Grid Background="Gray" Opacity="0.75" Visibility="{x:Bind ViewModel.IsBusy, Mode=OneWay}" Grid.Row="0" Grid.RowSpan="4">
+                    <TextBlock Text="Downloading data..." Style="{StaticResource TitleTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
         </Grid>
     </ScrollViewer>
     
