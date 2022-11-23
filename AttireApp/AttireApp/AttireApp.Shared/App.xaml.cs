@@ -24,7 +24,7 @@ namespace AttireApp
         /// </summary>
         public App()
         {
-            AttireDB data = new AttireDB();
+            AttireDB data = new();
             data.InitializeDB();
 
             

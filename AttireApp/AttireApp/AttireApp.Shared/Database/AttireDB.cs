@@ -3,10 +3,12 @@ using AttireApp.Database.DBUser;
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Windows.ApplicationModel.UserDataTasks;
 
 namespace AttireApp.Database
 {
@@ -57,6 +59,20 @@ namespace AttireApp.Database
             {
                 StatusMessage = string.Format("Failed to add {0}. Error: {1}", username, ex.Message);
             }
+        }
+        ObservableCollection<User> userList;
+        public async Task<List<User>> GetAllUsers()
+        {
+            try
+            {
+                await InitializeDB();
+                return await DB.Table<User>().ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                StatusMessage = string.Format("Failed to retrieve data. {0}", ex.Message);
+            }
+            return new List<User>();
         }
     }
 }
