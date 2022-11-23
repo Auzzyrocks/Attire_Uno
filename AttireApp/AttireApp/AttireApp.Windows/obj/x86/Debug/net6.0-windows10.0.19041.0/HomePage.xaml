@@ -9,7 +9,22 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <!-- Settings Button -->
+                <Button x:ConnectionId='2' Content="Settings"                            HorizontalAlignment="Right" VerticalAlignment="Top" 
+                    Height="40" Width="300" Margin="10, 10, 10, 10"/>
 
+                
+                
+                
+                
+                <!-- ForecastButton -->
+                <Button x:ConnectionId='3' Content="Forecast"                            HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+                    Height="40" Width="300" Margin="10, 10, 10, 10"/>
+
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
 

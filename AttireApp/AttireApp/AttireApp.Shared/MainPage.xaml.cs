@@ -16,16 +16,21 @@ namespace AttireApp
             this.InitializeComponent();
         }
 
+        private void HomePage_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HomePage));
+        }
+
         private void LinkForecast_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ForecastPage));
         }
-
-        private void Login_Click(object sender, RoutedEventArgs e)
+        
+        private void CreateAccountPage_Click(object sender, RoutedEventArgs e)
         {
-            string username = e.ToString();
-            string password = e.ToString();
-            Login.ValidateLogin(username, password);
+            this.Frame.Navigate(typeof(CreateAccountPage));
         }
+
+       
     }
 }

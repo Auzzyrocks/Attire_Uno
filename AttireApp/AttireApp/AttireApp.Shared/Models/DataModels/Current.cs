@@ -1,41 +1,16 @@
 ﻿/*
  * Author: Brandon Cosh
- * Date: November 7, 2022
+ * Date: November 22, 2022
+ * 
+ * Description:
+ *      A 'model' to consume Json weather API from weatherAPI.com
  */
+using AttireApp.Models.ViewModels;
 using System.Text.Json.Serialization;
-using System;
-using System.Globalization;
-using MvvmHelpers;
 
-namespace AttireApp.API
+namespace AttireApp.Models.DataModels
 {
-    //public class RootCurrent
-    //{
-    //    [JsonPropertyName("location")]
-    //    public Location Location { get; set; }
-
-    //    [JsonPropertyName("current")]
-    //    public Current Current { get; set; }
-    //}
-
-    public class Condition : ObservableObject
-    {
-        [JsonPropertyName("text")]
-        public string Text { get; set; }
-
-        private string icon;
-        [JsonPropertyName("icon")]
-        public string Icon
-        {
-            get => "https:" + icon;
-            set => SetProperty(ref icon, value);
-        }
-
-        [JsonPropertyName("code")]
-        public int Code { get; set; }
-    }
-
-    public class Current
+    public class Current : BindableBase
     {
         [JsonPropertyName("last_updated_epoch")]
         public int LastUpdatedEpoch { get; set; }
@@ -105,32 +80,5 @@ namespace AttireApp.API
 
         [JsonPropertyName("gust_kph")]
         public double GustKph { get; set; }
-    }
-
-    public class Location
-    {
-        [JsonPropertyName("name")]
-        public string Name { get; set; }
-
-        [JsonPropertyName("region")]
-        public string Region { get; set; }
-
-        [JsonPropertyName("country")]
-        public string Country { get; set; }
-
-        [JsonPropertyName("lat")]
-        public double Lat { get; set; }
-
-        [JsonPropertyName("lon")]
-        public double Lon { get; set; }
-
-        [JsonPropertyName("tz_id")]
-        public string TzId { get; set; }
-
-        [JsonPropertyName("localtime_epoch")]
-        public int LocaltimeEpoch { get; set; }
-
-        [JsonPropertyName("localtime")]
-        public string Localtime { get; set; }
     }
 }

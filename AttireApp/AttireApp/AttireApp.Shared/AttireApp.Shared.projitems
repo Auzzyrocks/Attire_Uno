@@ -30,7 +30,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\AirQuality.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Alerts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Astro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Condition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Current.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Day.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Forecast.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Hour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\RootWeatherData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ForecastViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebServices\WeatherApiHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)CreateAccountPage.xaml">

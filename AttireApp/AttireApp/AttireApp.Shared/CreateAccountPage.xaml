@@ -8,7 +8,45 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+   
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Vertical" Background="SteelBlue">
+            <TextBlock Text="Create A New Account" FontSize="35" Margin="0, 50, 0, 30" TextAlignment="Center" />
+            <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
 
-    </Grid>
+            <!-- Username Label & Text Box -->
+            <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBox Width="300" Text="username@example.com" Margin="0,0,0,24"/>
+
+            <!-- Password -->
+            <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+        
+            <!-- Confirm Password -->
+            <TextBlock Width="300" Text="Confirm Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+        
+            <!--Location-->
+            <ComboBox Header="Location" PlaceholderText="Select Your Location" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
+                <x:String>Nanaimo</x:String>
+                <x:String>Victoria</x:String>
+                <x:String>Courtney</x:String>
+                <x:String>Duncan</x:String>
+            </ComboBox>
+            
+            <!--Clothing Preferences-->
+            <ComboBox Header="Clothing Preferences" PlaceholderText="Select the most applicable" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
+                <x:String>Dress Very Warm</x:String>
+                <x:String>Dress Somewhat Warm</x:String>
+                <x:String>Dress Moderatley</x:String>
+                <x:String>Dress Somewhat Cool</x:String>
+                <x:String>Dress Very Cool</x:String>
+            </ComboBox>
+
+            <!-- Submit Button -->
+            <Button Content="Submit" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 0, 20, 20"/>
+            <HyperlinkButton Content="Return to Login Page" Click="LoginPage_Click" HorizontalAlignment="Center" Margin="0, 0, 20, 40"/>
+        </StackPanel>
+    </ScrollViewer>
+   
 </Page>
