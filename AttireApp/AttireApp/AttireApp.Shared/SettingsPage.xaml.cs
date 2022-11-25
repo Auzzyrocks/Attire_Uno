@@ -29,11 +29,6 @@ namespace AttireApp
         {
             this.Frame.Navigate(typeof(ForgotPasswordPage));
         }
-        
-        private void Logout_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(HomePage));
-        }
 
 
     }

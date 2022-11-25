@@ -12,7 +12,7 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel>
                 <!-- Return to Home Page Button -->
-                <Button Content="Back To Home Page" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 30, 0, 50"/>
+                <Button Content="Back to Home Page" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 30, 0, 50"/>
 
                 <!--Location-->
                 <ComboBox Header="Location" PlaceholderText="Select Your Location" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
@@ -32,7 +32,7 @@
                 </ComboBox>
 
                 <!--Temperature Scale Preferences-->
-                <ComboBox Header="Celcius / Fahrenheit" PlaceholderText="Select Temperature Scale" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
+                <ComboBox Header="Celcius / Farenheight" PlaceholderText="Select Temperature Scale" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
                     <x:String>Celsius</x:String>
                     <x:String>Fahrenheit</x:String>
                 </ComboBox>
@@ -42,9 +42,6 @@
 
                 <!-- Apply Changes -->
                 <Button Content="Apply Changes" Click="ApplySettings_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 20, 0, 40"/>
-                
-                <!-- Logout-->
-                <Button Content="Log Out" Click="Logout_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 20, 0, 40"/>
                 
             </StackPanel>
         </ScrollViewer>
