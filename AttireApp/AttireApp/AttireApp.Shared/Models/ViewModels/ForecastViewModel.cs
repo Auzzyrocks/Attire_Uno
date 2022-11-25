@@ -17,7 +17,7 @@ namespace AttireApp.Models.ViewModels
     {
         private ObservableCollection<String> cityOptions = new()
         {
-            "Nanaimo", "Vancouver", "Toronto", "Sydney"
+            "Nanaimo", "Duncan", "Victoria", "Courtenay", "Vancouver", "Toronto", "London"
 
         };
 
@@ -28,7 +28,7 @@ namespace AttireApp.Models.ViewModels
             set => SetMyProperty(ref _isBusy, value);
         }
 
-        private string _citySelected = String.Empty;
+        private string _citySelected = "Nanaimo";
         public string CitySelected
         {
             get => _citySelected;
@@ -51,6 +51,12 @@ namespace AttireApp.Models.ViewModels
         // Insert constructor below here
         public ForecastViewModel()
         {
+           LoadWeather();
+        }
+
+        private async void LoadWeather()
+        {
+            await LoadWeatherData(CitySelected);
         }
 
         // calls to weather API using string city as API query
