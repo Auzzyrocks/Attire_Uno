@@ -2,6 +2,7 @@
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using System;
 
 namespace AttireApp
 {
@@ -23,6 +24,11 @@ namespace AttireApp
         private void ForecastPage_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ForecastPage));
+        }
+
+        public void ShowTwoWayBind_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

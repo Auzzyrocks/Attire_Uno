@@ -31,7 +31,7 @@ namespace AttireApp.WebServices
         {
             RootWeatherData result = await GetAsync(
                 $"https://api.weatherapi.com/v1/forecast.json?key={apiKey}" +
-                $"&q={WebUtility.HtmlEncode(city)}" +
+                $"&q={WebUtility.HtmlEncode(city)},Canada" +
                 $"&days={daysForcast}" +
                 $"&aqi={additional}" +
                 $"&alerts={additional}");
