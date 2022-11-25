@@ -29,7 +29,11 @@
                 <!--###############-->
                 <!-- ROW 0 - Title -->
                 <!--###############-->
-                <TextBlock Text="{x:Bind ViewModel.CitySelected, Mode=TwoWay}" Style="{StaticResource HeaderTextBlockStyle}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{x:Bind ViewModel.CitySelected, Mode=TwoWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text="," Margin="0,0,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Region, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
+                </StackPanel>
 
 
                 <!--########################-->
@@ -104,10 +108,10 @@
 
 
             </Grid>
-                <!-- Busy Overlay -->
-                <Grid Background="Gray" Opacity="0.75" Visibility="{x:Bind ViewModel.IsBusy, Mode=OneWay}" Grid.Row="0" Grid.RowSpan="4">
-                    <TextBlock Text="Downloading data..." Style="{StaticResource TitleTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </Grid>
+            <!-- Busy Overlay -->
+            <Grid Background="Gray" Opacity="0.75" Visibility="{x:Bind ViewModel.IsBusy, Mode=OneWay}" Grid.Row="0" Grid.RowSpan="4">
+                <TextBlock Text="Downloading data..." Style="{StaticResource TitleTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
         </Grid>
     </ScrollViewer>
     
