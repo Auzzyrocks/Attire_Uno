@@ -1,12 +1,14 @@
 ﻿using AttireApp.Database;
+using AttireApp.Database.DBUser;
 using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
+using SQLite;
 using System;
+using System.Collections.Generic;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-
 
 namespace AttireApp
 {
@@ -16,20 +18,15 @@ namespace AttireApp
     public sealed partial class App : Application
     {
         private Window _window;
-
-
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         public App()
         {
-            AttireDB data = new();
-            data.InitializeDB();
-
-            
+            InitializeDataBase();
             InitializeLogging();
-
+            
             this.InitializeComponent();
 
 #if HAS_UNO || NETFX_CORE
@@ -57,7 +54,10 @@ namespace AttireApp
 #else
             _window = Microsoft.UI.Xaml.Window.Current;
 #endif
-
+            //////////////////////////////////////////
+            PrintUsers();
+            //////////////////////////////////////////
+            
             var rootFrame = _window.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -118,6 +118,36 @@ namespace AttireApp
             deferral.Complete();
         }
 
+        private static void InitializeDataBase()
+        {
+            AttireDB data = new();
+            _ = data.InitializeDB();
+        }
+
+        private static async void PrintUsers()
+        {
+            AttireDB data = new();
+            await data.AddNewUser("Moinker", "MacDonald");
+            await data.AddNewUser("Moinker", "MacDonald");
+            List<User> users = await data.GetAllUsers();
+            SQLiteCommand command = new(data.DB);
+
+            
+            foreach(User user in users)
+            {
+                //command.DataReader = 
+                System.Diagnostics.Debug.WriteLine("Name : {0}", user.FirstName);
+            }
+            
+            /* for(int i = 0; i < users.Count; i++).
+            {
+                var copy = users[i];
+                System.Diagnostics.Debug.WriteLine("First Name: {0}" + users[i].FirstName);
+
+                //Console.WriteLine(": " + new String(copy.HashPass));
+
+            }*/
+        }
         /// <summary>
         /// Configures global Uno Platform logging
         /// </summary>

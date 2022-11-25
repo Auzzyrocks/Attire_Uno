@@ -1,14 +1,8 @@
-﻿using Attire.DataBase;
-using AttireApp.Database.DBUser;
+﻿using AttireApp.Database.DBUser;
 using SQLite;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using Windows.ApplicationModel.UserDataTasks;
 
 namespace AttireApp.Database
 {
@@ -22,19 +16,21 @@ namespace AttireApp.Database
             
         }
 
+        
 
-        public SQLiteAsyncConnection DB;
+        public SQLiteConnection DB;
         public async Task InitializeDB()
         {
             if (DB is null) 
             {
                 Windows.Storage.StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
                 await storageFolder.CreateFileAsync("AttireData.db3", Windows.Storage.CreationCollisionOption.ReplaceExisting);
+                
             }
                 
 
-            DB = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
-            await DB.CreateTableAsync<DBUser.User>();
+            DB = new SQLiteConnection(Constants.DatabasePath, Constants.Flags);
+           DB.CreateTable<User>();
         }
 
         public async Task AddNewUser(string username, string password)
@@ -51,7 +47,7 @@ namespace AttireApp.Database
                     throw new Exception("Password Cannot be Empty");
                 }
                 //byte[] bytePass =  Encoding.UTF8.GetBytes(password);
-                result = await DB.InsertAsync(new User { UserName = username, HashPass = Login.hash_pass(password) });
+                result = DB.Insert(new User(username, password));
                 StatusMessage = string.Format("{0} record(s) added [UserName: {1})", result, username);
 
             }
@@ -60,13 +56,13 @@ namespace AttireApp.Database
                 StatusMessage = string.Format("Failed to add {0}. Error: {1}", username, ex.Message);
             }
         }
-        ObservableCollection<User> userList;
+
         public async Task<List<User>> GetAllUsers()
         {
             try
             {
                 await InitializeDB();
-                return await DB.Table<User>().ToListAsync();
+                return DB.Table<User>().ToList();
             }
             catch (Exception ex)
             {
