@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-26T01:58:27.049</Modified>
+      <Modified>2022-11-26T02:21:47.945</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-11-26T01:58:26.773</Modified>
+      <Modified>2022-11-26T02:21:47.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.runtimeconfig.json">
       <PackagePath>AttireApp.Windows.runtimeconfig.json</PackagePath>
-      <Modified>2022-11-25T20:58:21.888</Modified>
+      <Modified>2022-11-26T02:21:46.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.dll">
       <PackagePath>AttireApp.Windows.dll</PackagePath>
-      <Modified>2022-11-26T01:58:26.445</Modified>
+      <Modified>2022-11-26T02:21:45.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>AttireApp.Windows.exe</PackagePath>
-      <Modified>2022-11-26T01:58:24.272</Modified>
+      <Modified>2022-11-26T02:21:45.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.deps.json">
       <PackagePath>AttireApp.Windows.deps.json</PackagePath>
-      <Modified>2022-11-25T20:58:21.420</Modified>
+      <Modified>2022-11-26T02:21:46.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -173,26 +173,6 @@
       <PackagePath>MvvmHelpers.dll</PackagePath>
       <Modified>2020-05-27T04:48:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
-      <PackagePath>SQLite-net.dll</PackagePath>
-      <Modified>2021-09-02T21:04:32.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll">
-      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
-      <Modified>2020-09-03T17:13:26.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll">
-      <PackagePath>SQLitePCLRaw.nativelibrary.dll</PackagePath>
-      <Modified>2020-09-03T17:13:02.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.core\2.0.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
-      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
-      <Modified>2020-09-03T17:13:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.provider.dynamic_cdecl\2.0.4\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll">
-      <PackagePath>SQLitePCLRaw.provider.dynamic_cdecl.dll</PackagePath>
-      <Modified>2020-09-03T17:13:18.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.116\lib\netstandard2.1\System.Data.SQLite.dll">
       <PackagePath>System.Data.SQLite.dll</PackagePath>
       <Modified>2022-06-01T17:37:48.000</Modified>
@@ -260,58 +240,6 @@
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\alpine-x64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\alpine-x64\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-arm\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-arm\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-arm64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-arm64\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-armel\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-armel\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-mips64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-mips64\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-27T18:50:26.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-musl-x64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-musl-x64\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-x64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-x64\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-x86\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-x86\native\libe_sqlite3.so</PackagePath>
-      <Modified>2020-08-28T16:13:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\osx-x64\native\libe_sqlite3.dylib">
-      <PackagePath>runtimes\osx-x64\native\libe_sqlite3.dylib</PackagePath>
-      <Modified>2020-08-17T15:58:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-arm\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-arm\native\e_sqlite3.dll</PackagePath>
-      <Modified>2020-08-17T14:38:30.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-arm64\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-arm64\native\e_sqlite3.dll</PackagePath>
-      <Modified>2020-08-17T14:38:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-x64\native\e_sqlite3.dll</PackagePath>
-      <Modified>2020-08-17T14:38:20.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x86\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-x86\native\e_sqlite3.dll</PackagePath>
-      <Modified>2020-08-17T14:38:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.116\runtimes\linux-x64\native\SQLite.Interop.dll">
       <PackagePath>runtimes\linux-x64\native\SQLite.Interop.dll</PackagePath>

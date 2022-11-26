@@ -1,10 +1,5 @@
-using System;
-using SQLite;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
 using AttireApp.Database.DBUser;
 using System.Security.Cryptography;
 using AttireApp.Database;

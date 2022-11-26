@@ -11,10 +11,10 @@ namespace AttireApp.DataBase
         public int AddAccount(string username, string password, string email, int location){return 0;}
         
         //exact same functionality as hash_pass() but operates on an email
-        public static string HashEmail(string email)
+        public static new string HashEmail(string email)
         {
-            string Hemail = Login.HashPass(email);
-            return Hemail;
+            string Hashmail = Login.HashPass(email);
+            return Hashmail;
         }
 
         //searches DB to see if email exists already

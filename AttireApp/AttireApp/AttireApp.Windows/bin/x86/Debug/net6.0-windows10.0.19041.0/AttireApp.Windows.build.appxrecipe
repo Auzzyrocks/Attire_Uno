@@ -130,21 +130,6 @@
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\refractored.mvvmhelpers\1.6.2\lib\netstandard2.0\MvvmHelpers.dll">
       <PackagePath>MvvmHelpers.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlite-net-pcl\1.8.116\lib\netstandard2.0\SQLite-net.dll">
-      <PackagePath>SQLite-net.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll">
-      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.bundle_green\2.0.4\lib\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll">
-      <PackagePath>SQLitePCLRaw.nativelibrary.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.core\2.0.4\lib\netstandard2.0\SQLitePCLRaw.core.dll">
-      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.provider.dynamic_cdecl\2.0.4\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll">
-      <PackagePath>SQLitePCLRaw.provider.dynamic_cdecl.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.116\lib\netstandard2.1\System.Data.SQLite.dll">
       <PackagePath>System.Data.SQLite.dll</PackagePath>
     </AppxPackagedFile>
@@ -195,45 +180,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\alpine-x64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\alpine-x64\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-arm\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-arm\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-arm64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-arm64\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-armel\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-armel\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-mips64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-mips64\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-musl-x64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-musl-x64\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-x64\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-x64\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\linux-x86\native\libe_sqlite3.so">
-      <PackagePath>runtimes\linux-x86\native\libe_sqlite3.so</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\osx-x64\native\libe_sqlite3.dylib">
-      <PackagePath>runtimes\osx-x64\native\libe_sqlite3.dylib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-arm\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-arm\native\e_sqlite3.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-arm64\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-arm64\native\e_sqlite3.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x64\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-x64\native\e_sqlite3.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.4\runtimes\win-x86\native\e_sqlite3.dll">
-      <PackagePath>runtimes\win-x86\native\e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.116\runtimes\linux-x64\native\SQLite.Interop.dll">
       <PackagePath>runtimes\linux-x64\native\SQLite.Interop.dll</PackagePath>
