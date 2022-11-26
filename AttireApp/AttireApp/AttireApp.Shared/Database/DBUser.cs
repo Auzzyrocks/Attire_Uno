@@ -1,42 +1,39 @@
-using SQLite;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
-using Windows.Security.Authentication.Web.Core;
+using System.Data.SQLite;
 
 namespace AttireApp.Database.DBUser
 {
-    [Table("User")]
+    //[Table("User")]
     public class User
     {
         //properties of a user object
-        [PrimaryKey, AutoIncrement, Column("userID"), Unique]
+        //[PrimaryKey, AutoIncrement, Column("userID"), Unique]
         public int UserID { get; set; }
 
-        [MaxLength(25), Unique, Column("userName")]
+        //[MaxLength(25), Unique, Column("userName")]
         public string UserName { get; set; }
 
-        [MaxLength(64), Column("hashEmail")]
-        public byte[] HashPass { get; set; }
+        //[MaxLength(64), Column("hashEmail")]
+        public string HashPass { get; set; }
 
-        [MaxLength(64), Unique, Column("hashEmail")]
+        //[MaxLength(64), Unique, Column("hashEmail")]
         public string HashEmail { get; set; }
 
-        [MaxLength(20), Column("firstName")]
+        //[MaxLength(20), Column("firstName")]
         public string FirstName { get; set; }
 
-        [MaxLength(20), Column("lastName")]
+        //[MaxLength(20), Column("lastName")]
         public string LastName { get; set; }
 
-        [MaxLength(20), Column("Location")]
+        //[MaxLength(20), Column("Location")]
         public string Location { get; set; }
 
-        [MaxLength(20), Column("tempUnit")]
-        public bool TempUnit { get; set; }
+        //[MaxLength(20), Column("tempUnit")]
+        public int TempUnit { get; set; }
+
+        public int WarmthPref { get; set; }
 
         //default constructor (used in creating db)
         public User() { }
@@ -45,7 +42,7 @@ namespace AttireApp.Database.DBUser
             using SHA256 mySHA = SHA256.Create();
             byte[] pass = Encoding.UTF8.GetBytes(PassWord);
             this.UserName = UserName;
-            this.HashPass = mySHA.ComputeHash(pass);
+            this.HashPass = mySHA.ComputeHash(pass).ToString();
 
 
 
@@ -98,7 +95,7 @@ namespace AttireApp.Database.DBUser
         }
 
 
-        public bool SetTempUnit(bool TempUnit) 
+        public bool SetTempUnit(int TempUnit) 
         { 
             this.TempUnit = TempUnit;
             return true; 

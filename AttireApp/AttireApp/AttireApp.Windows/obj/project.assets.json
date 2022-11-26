@@ -475,6 +475,37 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -509,6 +540,12 @@
           "lib/netstandard1.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -1468,6 +1505,19 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1503,6 +1553,12 @@
           "lib/netstandard1.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2483,6 +2539,22 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/SQLite.Interop.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2518,6 +2590,12 @@
           "lib/netstandard1.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -3498,6 +3576,22 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x86/native/SQLite.Interop.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3533,6 +3627,12 @@
           "lib/netstandard1.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -5700,6 +5800,27 @@
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
       ]
     },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+      "sha512": "VEe/vzvn2ECKovtyb+nf8fsnNQ4EYOUms7gnp9729NN7FSR/0v/uVoBDO7DETzV7YCquRVwRnSnYuoOwAoTEKA==",
+      "type": "package",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.116",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
+        "lib/netstandard2.1/System.Data.SQLite.dll",
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.1/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
     "System.Collections/4.3.0": {
       "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
@@ -5781,6 +5902,17 @@
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
         "system.collections.immutable.1.3.1.nupkg.sha512",
         "system.collections.immutable.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.116": {
+      "sha512": "djwmo97syWCpUPJbDS0e2qUFUa8cDLeIfMotVkaRkAC5gpfBSZLMzvoLkLp1prY8waAuH1jEC3wcB2ymVVQWtA==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.116",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.116.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {
@@ -8427,6 +8559,7 @@
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.755",
       "Microsoft.WindowsAppSDK >= 1.2.221116.1",
       "Refractored.MvvmHelpers >= 1.6.2",
+      "System.Data.SQLite.Core >= 1.0.116",
       "Uno.Core >= 4.0.1",
       "Uno.Core.Extensions.Logging.Singleton >= 4.0.1",
       "Uno.WinUI >= 4.6.19",
@@ -8434,26 +8567,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shoulau\\.nuget\\packages\\": {},
+    "C:\\Users\\Smile\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno2\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+      "projectUniqueName": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
       "projectName": "AttireApp.Windows",
-      "projectPath": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno2\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
-      "packagesPath": "C:\\Users\\shoulau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shoulau\\Source\\Repos\\attire_uno2\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
+      "projectPath": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\AttireApp.Windows.csproj",
+      "packagesPath": "C:\\Users\\Smile\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\AttireApp\\AttireApp.Windows\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\shoulau\\Source\\Repos\\attire_uno2\\AttireApp\\NuGet.Config",
-        "C:\\Users\\shoulau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Smile\\Source\\Repos\\attire_uno\\AttireApp\\NuGet.Config",
+        "C:\\Users\\Smile\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8501,6 +8634,10 @@
           "Refractored.MvvmHelpers": {
             "target": "Package",
             "version": "[1.6.2, )"
+          },
+          "System.Data.SQLite.Core": {
+            "target": "Package",
+            "version": "[1.0.116, )"
           },
           "Uno.Core": {
             "target": "Package",

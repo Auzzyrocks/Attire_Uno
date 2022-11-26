@@ -1,10 +1,11 @@
-﻿using AttireApp.Database;
+﻿using Attire.DataBase;
+using AttireApp.Database;
 using AttireApp.Database.DBUser;
+using AttireApp.DataBase;
 using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
-using SQLite;
 using System;
 using System.Collections.Generic;
 using Windows.ApplicationModel;
@@ -54,10 +55,8 @@ namespace AttireApp
 #else
             _window = Microsoft.UI.Xaml.Window.Current;
 #endif
-            //////////////////////////////////////////
-            PrintUsers();
-            //////////////////////////////////////////
-            
+           
+
             var rootFrame = _window.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -121,32 +120,33 @@ namespace AttireApp
         private static void InitializeDataBase()
         {
             AttireDB data = new();
-            _ = data.InitializeDB();
+            //data.DropTable("User");
+            data.InitializeDB();
         }
 
-        private static async void PrintUsers()
+        //used for testing. Will remove eventually -RM
+        private static void PrintUsers()
         {
-            AttireDB data = new();
-            await data.AddNewUser("Moinker", "MacDonald");
-            await data.AddNewUser("Moinker", "MacDonald");
-            List<User> users = await data.GetAllUsers();
-            SQLiteCommand command = new(data.DB);
+            User user1 = new();
+            user1.UserName = "Magikarp";
+            user1.HashPass = Login.HashPass("riley");
+            user1.HashEmail = Accounts.HashEmail("email@email.ca");
+            user1.FirstName = "riley";
+            user1.LastName = "macdon";
+            user1.Location = "nanaimo";
+            user1.TempUnit = 0;
 
-            
+            AttireDB data = new();
+            var conn = data.CreateConnection();
+            data.AddNewUser(user1);
+            //data.AddNewUser("Moinker", "MacDonald", "notEmail");
+            List<User> users = AttireDB.GetAllUsers();
+            //SQLiteCommand command = new(conn);
             foreach(User user in users)
             {
                 //command.DataReader = 
-                System.Diagnostics.Debug.WriteLine("Name : {0}", user.FirstName);
+                System.Diagnostics.Debug.WriteLine(user.UserName);
             }
-            
-            /* for(int i = 0; i < users.Count; i++).
-            {
-                var copy = users[i];
-                System.Diagnostics.Debug.WriteLine("First Name: {0}" + users[i].FirstName);
-
-                //Console.WriteLine(": " + new String(copy.HashPass));
-
-            }*/
         }
         /// <summary>
         /// Configures global Uno Platform logging
