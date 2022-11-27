@@ -22,6 +22,7 @@
             <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
 
             <!-- Login Button -->
+            <!-- I think i should change the click to "Login_Click" as this is the method ive created in mainpage.xaml.cs -Riley -->
             <Button Content="Log In" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300"/>
             
             <HyperlinkButton Content="Link to Home Page" Click="HomePage_Click" HorizontalAlignment="Center"/>

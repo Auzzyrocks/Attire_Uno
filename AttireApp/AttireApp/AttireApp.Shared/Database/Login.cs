@@ -35,6 +35,7 @@ namespace Attire.DataBase
         }
 
         //searches DB to see if the user exists, returns the user object if it does exist. Otherwise, returns NULL
+        //the user object will have all the attributes listed in the database, they can be accesed by "user.FirstName" (if your User object is named user)
         public static User FindUser(string username)
         {
             if(string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(username)) 

@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-26T02:21:47.945</Modified>
+      <Modified>2022-11-27T19:05:01.421</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-11-26T02:21:47.406</Modified>
+      <Modified>2022-11-27T19:05:01.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.runtimeconfig.json">
       <PackagePath>AttireApp.Windows.runtimeconfig.json</PackagePath>
-      <Modified>2022-11-26T02:21:46.656</Modified>
+      <Modified>2022-11-27T19:05:01.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.dll">
       <PackagePath>AttireApp.Windows.dll</PackagePath>
-      <Modified>2022-11-26T02:21:45.234</Modified>
+      <Modified>2022-11-27T19:05:00.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\apphost.exe">
       <PackagePath>AttireApp.Windows.exe</PackagePath>
-      <Modified>2022-11-26T02:21:45.930</Modified>
+      <Modified>2022-11-27T19:05:00.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.deps.json">
       <PackagePath>AttireApp.Windows.deps.json</PackagePath>
-      <Modified>2022-11-26T02:21:46.197</Modified>
+      <Modified>2022-11-27T19:05:01.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Smile\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
