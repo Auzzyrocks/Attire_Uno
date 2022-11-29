@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AttireApp.Models.ViewModels
 {
-    class ForgotPasswrodViewModel : BindableBase
+    class ForgotPasswordViewModel : BindableBase
     {
     }
 }
