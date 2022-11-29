@@ -1,0 +1,1 @@
+C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\AttireApp.Windows.csproj;x86
