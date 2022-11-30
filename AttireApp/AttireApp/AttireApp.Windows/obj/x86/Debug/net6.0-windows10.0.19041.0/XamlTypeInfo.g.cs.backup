@@ -224,67 +224,59 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[29];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "AttireApp.Models.ViewModels.CreateAccountViewModel";
-            _typeNameTable[5] = "AttireApp.Models.ViewModels.BindableBase";
-            _typeNameTable[6] = "AttireApp.CreateAccountPage";
-            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[8] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[9] = "AttireApp.Models.ViewModels.ForecastViewModel";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "System.Collections.ObjectModel.ObservableCollection`1<String>";
-            _typeNameTable[12] = "System.Collections.ObjectModel.Collection`1<String>";
-            _typeNameTable[13] = "AttireApp.Models.DataModels.RootWeatherData";
-            _typeNameTable[14] = "Uno.UI.Toolkit.VisibleBoundsPadding";
-            _typeNameTable[15] = "Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask";
-            _typeNameTable[16] = "System.Enum";
-            _typeNameTable[17] = "System.ValueType";
-            _typeNameTable[18] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[19] = "AttireApp.ForecastPage";
-            _typeNameTable[20] = "AttireApp.Models.ViewModels.ForgotPasswordViewModel";
-            _typeNameTable[21] = "AttireApp.ForgotPasswordPage";
-            _typeNameTable[22] = "AttireApp.Models.ViewModels.HomeViewModel";
-            _typeNameTable[23] = "AttireApp.Models.ViewModels.WeatherViewModelBase";
-            _typeNameTable[24] = "AttireApp.HomePage";
-            _typeNameTable[25] = "AttireApp.Models.ViewModels.LoginViewModel";
-            _typeNameTable[26] = "AttireApp.MainPage";
-            _typeNameTable[27] = "AttireApp.Models.ViewModels.SettingsViewModel";
-            _typeNameTable[28] = "AttireApp.SettingsPage";
+            _typeNameTable[4] = "AttireApp.CreateAccountPage";
+            _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[7] = "AttireApp.Models.ViewModels.ForecastViewModel";
+            _typeNameTable[8] = "AttireApp.Models.ViewModels.BindableBase";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "System.Collections.ObjectModel.ObservableCollection`1<String>";
+            _typeNameTable[11] = "System.Collections.ObjectModel.Collection`1<String>";
+            _typeNameTable[12] = "AttireApp.Models.DataModels.RootWeatherData";
+            _typeNameTable[13] = "Uno.UI.Toolkit.VisibleBoundsPadding";
+            _typeNameTable[14] = "Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask";
+            _typeNameTable[15] = "System.Enum";
+            _typeNameTable[16] = "System.ValueType";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[18] = "AttireApp.ForecastPage";
+            _typeNameTable[19] = "AttireApp.ForgotPasswordPage";
+            _typeNameTable[20] = "AttireApp.Models.ViewModels.HomeViewModel";
+            _typeNameTable[21] = "AttireApp.Models.ViewModels.WeatherViewModelBase";
+            _typeNameTable[22] = "AttireApp.HomePage";
+            _typeNameTable[23] = "AttireApp.MainPage";
+            _typeNameTable[24] = "AttireApp.SettingsPage";
 
-            _typeTable = new global::System.Type[29];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::AttireApp.Models.ViewModels.CreateAccountViewModel);
-            _typeTable[5] = typeof(global::AttireApp.Models.ViewModels.BindableBase);
-            _typeTable[6] = typeof(global::AttireApp.CreateAccountPage);
-            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[9] = typeof(global::AttireApp.Models.ViewModels.ForecastViewModel);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.String>);
-            _typeTable[12] = typeof(global::System.Collections.ObjectModel.Collection<global::System.String>);
-            _typeTable[13] = typeof(global::AttireApp.Models.DataModels.RootWeatherData);
-            _typeTable[14] = typeof(global::Uno.UI.Toolkit.VisibleBoundsPadding);
-            _typeTable[15] = typeof(global::Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask);
-            _typeTable[16] = typeof(global::System.Enum);
-            _typeTable[17] = typeof(global::System.ValueType);
-            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[19] = typeof(global::AttireApp.ForecastPage);
-            _typeTable[20] = typeof(global::AttireApp.Models.ViewModels.ForgotPasswordViewModel);
-            _typeTable[21] = typeof(global::AttireApp.ForgotPasswordPage);
-            _typeTable[22] = typeof(global::AttireApp.Models.ViewModels.HomeViewModel);
-            _typeTable[23] = typeof(global::AttireApp.Models.ViewModels.WeatherViewModelBase);
-            _typeTable[24] = typeof(global::AttireApp.HomePage);
-            _typeTable[25] = typeof(global::AttireApp.Models.ViewModels.LoginViewModel);
-            _typeTable[26] = typeof(global::AttireApp.MainPage);
-            _typeTable[27] = typeof(global::AttireApp.Models.ViewModels.SettingsViewModel);
-            _typeTable[28] = typeof(global::AttireApp.SettingsPage);
+            _typeTable[4] = typeof(global::AttireApp.CreateAccountPage);
+            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[7] = typeof(global::AttireApp.Models.ViewModels.ForecastViewModel);
+            _typeTable[8] = typeof(global::AttireApp.Models.ViewModels.BindableBase);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.String>);
+            _typeTable[11] = typeof(global::System.Collections.ObjectModel.Collection<global::System.String>);
+            _typeTable[12] = typeof(global::AttireApp.Models.DataModels.RootWeatherData);
+            _typeTable[13] = typeof(global::Uno.UI.Toolkit.VisibleBoundsPadding);
+            _typeTable[14] = typeof(global::Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask);
+            _typeTable[15] = typeof(global::System.Enum);
+            _typeTable[16] = typeof(global::System.ValueType);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[18] = typeof(global::AttireApp.ForecastPage);
+            _typeTable[19] = typeof(global::AttireApp.ForgotPasswordPage);
+            _typeTable[20] = typeof(global::AttireApp.Models.ViewModels.HomeViewModel);
+            _typeTable[21] = typeof(global::AttireApp.Models.ViewModels.WeatherViewModelBase);
+            _typeTable[22] = typeof(global::AttireApp.HomePage);
+            _typeTable[23] = typeof(global::AttireApp.MainPage);
+            _typeTable[24] = typeof(global::AttireApp.SettingsPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -320,22 +312,18 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_4_CreateAccountViewModel() { return new global::AttireApp.Models.ViewModels.CreateAccountViewModel(); }
-        private object Activate_6_CreateAccountPage() { return new global::AttireApp.CreateAccountPage(); }
-        private object Activate_9_ForecastViewModel() { return new global::AttireApp.Models.ViewModels.ForecastViewModel(); }
-        private object Activate_11_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.String>(); }
-        private object Activate_12_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.String>(); }
-        private object Activate_13_RootWeatherData() { return new global::AttireApp.Models.DataModels.RootWeatherData(); }
-        private object Activate_19_ForecastPage() { return new global::AttireApp.ForecastPage(); }
-        private object Activate_20_ForgotPasswordViewModel() { return new global::AttireApp.Models.ViewModels.ForgotPasswordViewModel(); }
-        private object Activate_21_ForgotPasswordPage() { return new global::AttireApp.ForgotPasswordPage(); }
-        private object Activate_22_HomeViewModel() { return new global::AttireApp.Models.ViewModels.HomeViewModel(); }
-        private object Activate_23_WeatherViewModelBase() { return new global::AttireApp.Models.ViewModels.WeatherViewModelBase(); }
-        private object Activate_24_HomePage() { return new global::AttireApp.HomePage(); }
-        private object Activate_25_LoginViewModel() { return new global::AttireApp.Models.ViewModels.LoginViewModel(); }
-        private object Activate_26_MainPage() { return new global::AttireApp.MainPage(); }
-        private object Activate_27_SettingsViewModel() { return new global::AttireApp.Models.ViewModels.SettingsViewModel(); }
-        private object Activate_28_SettingsPage() { return new global::AttireApp.SettingsPage(); }
+        private object Activate_4_CreateAccountPage() { return new global::AttireApp.CreateAccountPage(); }
+        private object Activate_7_ForecastViewModel() { return new global::AttireApp.Models.ViewModels.ForecastViewModel(); }
+        private object Activate_10_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.String>(); }
+        private object Activate_11_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.String>(); }
+        private object Activate_12_RootWeatherData() { return new global::AttireApp.Models.DataModels.RootWeatherData(); }
+        private object Activate_18_ForecastPage() { return new global::AttireApp.ForecastPage(); }
+        private object Activate_19_ForgotPasswordPage() { return new global::AttireApp.ForgotPasswordPage(); }
+        private object Activate_20_HomeViewModel() { return new global::AttireApp.Models.ViewModels.HomeViewModel(); }
+        private object Activate_21_WeatherViewModelBase() { return new global::AttireApp.Models.ViewModels.WeatherViewModelBase(); }
+        private object Activate_22_HomePage() { return new global::AttireApp.HomePage(); }
+        private object Activate_23_MainPage() { return new global::AttireApp.MainPage(); }
+        private object Activate_24_SettingsPage() { return new global::AttireApp.SettingsPage(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -343,13 +331,13 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_11_ObservableCollection(object instance, object item)
+        private void VectorAdd_10_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_12_Collection(object instance, object item)
+        private void VectorAdd_11_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
@@ -386,37 +374,24 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  AttireApp.Models.ViewModels.CreateAccountViewModel
-                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.BindableBase"));
-                userType.Activator = Activate_4_CreateAccountViewModel;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  AttireApp.Models.ViewModels.BindableBase
-                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  AttireApp.CreateAccountPage
+            case 4:   //  AttireApp.CreateAccountPage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_CreateAccountPage;
+                userType.Activator = Activate_4_CreateAccountPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Microsoft.UI.Xaml.Controls.Page
+            case 5:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 6:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  AttireApp.Models.ViewModels.ForecastViewModel
+            case 7:   //  AttireApp.Models.ViewModels.ForecastViewModel
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.BindableBase"));
-                userType.Activator = Activate_9_ForecastViewModel;
+                userType.Activator = Activate_7_ForecastViewModel;
                 userType.AddMemberName("IsBusy");
                 userType.AddMemberName("CitySelected");
                 userType.AddMemberName("CityOptions");
@@ -425,38 +400,44 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
+            case 8:   //  AttireApp.Models.ViewModels.BindableBase
+                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  String
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  System.Collections.ObjectModel.ObservableCollection`1<String>
+            case 10:   //  System.Collections.ObjectModel.ObservableCollection`1<String>
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<String>"));
-                userType.CollectionAdd = VectorAdd_11_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_10_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.Collections.ObjectModel.Collection`1<String>
+            case 11:   //  System.Collections.ObjectModel.Collection`1<String>
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_12_Collection;
-                userType.CollectionAdd = VectorAdd_12_Collection;
+                userType.Activator = Activate_11_Collection;
+                userType.CollectionAdd = VectorAdd_11_Collection;
                 xamlType = userType;
                 break;
 
-            case 13:   //  AttireApp.Models.DataModels.RootWeatherData
+            case 12:   //  AttireApp.Models.DataModels.RootWeatherData
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.BindableBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Uno.UI.Toolkit.VisibleBoundsPadding
+            case 13:   //  Uno.UI.Toolkit.VisibleBoundsPadding
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("PaddingMask");
                 xamlType = userType;
                 break;
 
-            case 15:   //  Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask
+            case 14:   //  Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask.None);
                 userType.AddEnumValue("Top", global::Uno.UI.Toolkit.VisibleBoundsPadding.PaddingMask.Top);
@@ -467,53 +448,46 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 16:   //  System.Enum
+            case 15:   //  System.Enum
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.ValueType
+            case 16:   //  System.ValueType
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 18:   //  Microsoft.UI.Xaml.DependencyObject
+            case 17:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  AttireApp.ForecastPage
+            case 18:   //  AttireApp.ForecastPage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_ForecastPage;
+                userType.Activator = Activate_18_ForecastPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  AttireApp.Models.ViewModels.ForgotPasswordViewModel
-                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.BindableBase"));
-                userType.Activator = Activate_20_ForgotPasswordViewModel;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 21:   //  AttireApp.ForgotPasswordPage
+            case 19:   //  AttireApp.ForgotPasswordPage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_ForgotPasswordPage;
+                userType.Activator = Activate_19_ForgotPasswordPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  AttireApp.Models.ViewModels.HomeViewModel
+            case 20:   //  AttireApp.Models.ViewModels.HomeViewModel
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.WeatherViewModelBase"));
-                userType.Activator = Activate_22_HomeViewModel;
+                userType.Activator = Activate_20_HomeViewModel;
                 userType.AddMemberName("MyProperty");
                 userType.AddMemberName("MyTwoWayProperty");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  AttireApp.Models.ViewModels.WeatherViewModelBase
+            case 21:   //  AttireApp.Models.ViewModels.WeatherViewModelBase
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.BindableBase"));
-                userType.Activator = Activate_23_WeatherViewModelBase;
+                userType.Activator = Activate_21_WeatherViewModelBase;
                 userType.AddMemberName("WeatherData");
                 userType.AddMemberName("IsBusy");
                 userType.AddMemberName("LocationPreference");
@@ -521,37 +495,23 @@ namespace AttireApp.AttireApp_Windows_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 24:   //  AttireApp.HomePage
+            case 22:   //  AttireApp.HomePage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_HomePage;
+                userType.Activator = Activate_22_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  AttireApp.Models.ViewModels.LoginViewModel
-                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.WeatherViewModelBase"));
-                userType.Activator = Activate_25_LoginViewModel;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 26:   //  AttireApp.MainPage
+            case 23:   //  AttireApp.MainPage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_MainPage;
+                userType.Activator = Activate_23_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  AttireApp.Models.ViewModels.SettingsViewModel
-                userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("AttireApp.Models.ViewModels.BindableBase"));
-                userType.Activator = Activate_27_SettingsViewModel;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 28:   //  AttireApp.SettingsPage
+            case 24:   //  AttireApp.SettingsPage
                 userType = new global::AttireApp.AttireApp_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_28_SettingsPage;
+                userType.Activator = Activate_24_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
