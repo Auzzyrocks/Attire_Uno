@@ -1,27 +1,71 @@
-using System;
-using SQLite;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
+using AttireApp.Database.DBUser;
+using System.Security.Cryptography;
+using AttireApp.Database;
 
 namespace Attire.DataBase
 {
-    public class login
+    public class Login : User
     {
         
         //main driver funtion for this file. will call all functions below
-        public int validate_login(string username, string password){return 0;}
+        //Will return -1 if user isnt in database, 1 if the username and password match, and 0 if the password is incorrect.
+        public static int ValidateLogin(string username, string password)
+        {
+            User curUser = FindUser(username);
+            if(curUser == null)
+            {
+                System.Diagnostics.Debug.WriteLine("User Not Found In Database");
+                return -1;
+            }
 
-        //searches DB to see if the user exists
-        public bool find_user(string username){return true;}
+            string Hpass = HashPass(password);
+            System.Diagnostics.Debug.WriteLine("user pass = " + curUser.HashPass);
+            System.Diagnostics.Debug.WriteLine("check pass = " + Hpass);
 
-        //hashes input password to use in compare_pass
-        public string hash_pass(string password){return "s";}
 
-        //compares the user input username and password(post-hash) in order to validate a login
-        public bool compare_pass(string username, string hashedPass){return true;}
+            if (Hpass == curUser.HashPass)
+            {
+                System.Diagnostics.Debug.WriteLine("Password correct. Access Granted");
+                return 1;
+            }
+            System.Diagnostics.Debug.WriteLine("Incorrect password");
+            return 0;
+        }
+
+        //searches DB to see if the user exists, returns the user object if it does exist. Otherwise, returns NULL
+        public static User FindUser(string username)
+        {
+            if(string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(username)) 
+            {
+                return null;
+            }
+            List<User> users = new List<User>();
+            users = AttireDB.GetAllUsers();
+
+            foreach (User user in users)
+            {
+                if (user.UserName.ToUpper() == username.ToUpper())
+                {
+                    return user;
+                }
+            }
+            return null;
+        }
+
+        //hashes input password to use in validate login and set pass(user class)
+
+        public static new string HashPass(string password) 
+        {
+            using (SHA256 mySHA = SHA256.Create())
+            {
+                byte[] pass = Encoding.UTF8.GetBytes(password);
+                string hashPass = Encoding.UTF8.GetString(mySHA.ComputeHash(pass));
+
+                return hashPass;
+            }
+        }
 
     }
 }

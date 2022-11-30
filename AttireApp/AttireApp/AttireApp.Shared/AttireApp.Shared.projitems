@@ -41,8 +41,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Location.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\RootWeatherData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\CreateAccountViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ForecastViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ForgotPasswordViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\SettingsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\WeatherViewModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WebServices\WeatherApiHandler.cs" />

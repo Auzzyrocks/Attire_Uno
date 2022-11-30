@@ -1,12 +1,15 @@
-﻿using AttireApp.Database;
+﻿using Attire.DataBase;
+using AttireApp.Database;
+using AttireApp.Database.DBUser;
+using AttireApp.DataBase;
 using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using System;
+using System.Collections.Generic;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-
 
 namespace AttireApp
 {
@@ -16,19 +19,15 @@ namespace AttireApp
     public sealed partial class App : Application
     {
         private Window _window;
-
-
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         public App()
         {
-            AttireDB data = new AttireDB();
-            data.InitializeDB();
-            
+            InitializeDataBase();
             InitializeLogging();
-
+            
             this.InitializeComponent();
 
 #if HAS_UNO || NETFX_CORE
@@ -56,6 +55,7 @@ namespace AttireApp
 #else
             _window = Microsoft.UI.Xaml.Window.Current;
 #endif
+           
 
             var rootFrame = _window.Content as Frame;
 
@@ -117,6 +117,37 @@ namespace AttireApp
             deferral.Complete();
         }
 
+        private static void InitializeDataBase()
+        {
+            AttireDB data = new();
+            //data.DropTable("User");
+            data.InitializeDB();
+        }
+
+        //used for testing. Will remove eventually -RM
+        private static void PrintUsers()
+        {
+            User user1 = new();
+            user1.UserName = "Magikarp";
+            user1.HashPass = Login.HashPass("riley");
+            user1.HashEmail = Accounts.HashEmail("email@email.ca");
+            user1.FirstName = "riley";
+            user1.LastName = "macdon";
+            user1.Location = "nanaimo";
+            user1.TempUnit = 0;
+
+            AttireDB data = new();
+            var conn = data.CreateConnection();
+            data.AddNewUser(user1);
+            //data.AddNewUser("Moinker", "MacDonald", "notEmail");
+            List<User> users = AttireDB.GetAllUsers();
+            //SQLiteCommand command = new(conn);
+            foreach(User user in users)
+            {
+                //command.DataReader = 
+                System.Diagnostics.Debug.WriteLine(user.UserName);
+            }
+        }
         /// <summary>
         /// Configures global Uno Platform logging
         /// </summary>
