@@ -241,8 +241,20 @@
     <AppxPackagedFile Include="C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Windows\Images\Wide310x150Logo.scale-200.png">
       <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Shared\Assets\Images\pants_icon.png">
+      <PackagePath>Images\pants_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Shared\Assets\Images\shorts_icon.png">
+      <PackagePath>Images\shorts_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Shared\Assets\pants_icon.png">
+      <PackagePath>pants_icon.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Shared\Assets\SharedAssets.md">
       <PackagePath>SharedAssets.md</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Shared\Assets\shorts_icon.png">
+      <PackagePath>shorts_icon.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

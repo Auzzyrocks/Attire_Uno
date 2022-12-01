@@ -32,6 +32,7 @@ namespace AttireApp.Models.ViewModels
         // for normal vars that don't need to be bindable we can ignore the setters and getters and use as regular vars
         private int millisecondDelay = 4000;
 
+
         // Constructor
         public HomeViewModel()
         {
