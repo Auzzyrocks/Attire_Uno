@@ -57,21 +57,7 @@ namespace AttireApp.Database.DBUser
 
 
 
-        /*	public string get_location(){
-                if(location == 0){
-                    return "Nanaimo";
-                }else if(location == 1){
-                    return "Vancouver";
-                }else if(location == 2){
-                    return "Parksville";
-                }else if(location == 3){
-                    return "Ladysmith";
-                }else{
-                    return "No location specified";
-                }
-            }
-            */
-
+       
         //setters for user object. these will call db for info and set it to the class. (will be used in constructor)
         //these will also be used for updating the user's names and preferences.
         public bool SetUsername(string NewUserName)

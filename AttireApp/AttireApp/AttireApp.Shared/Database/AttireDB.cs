@@ -104,7 +104,7 @@ namespace AttireApp.Database
 
             sqlcommand.CommandText = "INSERT INTO User(username, password, email) VALUES(@username, @password, @email)";
             sqlcommand.Parameters.AddWithValue("@username", username);
-            sqlcommand.Parameters.AddWithValue("@password", pass);
+            sqlcommand.Parameters.AddWithValue("@hashpass", pass);
             sqlcommand.Parameters.AddWithValue("@email", email);
             sqlcommand.Prepare();
             sqlcommand.ExecuteNonQuery();

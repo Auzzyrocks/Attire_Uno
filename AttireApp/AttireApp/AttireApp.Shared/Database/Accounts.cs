@@ -6,8 +6,7 @@ namespace AttireApp.DataBase
 {
     public class Accounts : Login
     {   
-       
-        
+
         //exact same functionality as hash_pass() but operates on an email
         public static new string HashEmail(string email)
         {
@@ -21,6 +20,7 @@ namespace AttireApp.DataBase
             List<User> users = AttireDB.GetAllUsers();
             foreach (User user in users) 
             {
+
                 if(hashEmail == user.HashEmail)
                 {
                     return false;

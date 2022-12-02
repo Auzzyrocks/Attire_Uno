@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttireApp.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,9 +24,14 @@ namespace AttireApp.Models.ViewModels
         public bool OnLogin()
         {
             // do your username & password validation here
-            Console.WriteLine(Username);
-            Console.WriteLine(Password);
-            return true;
+            //Console.WriteLine(Username);
+            //Console.WriteLine(Password);
+            if(Login.ValidateLogin(Username, Password) == 1)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

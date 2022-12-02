@@ -26,7 +26,12 @@ namespace AttireApp
         {
             InitializeDataBase();
             InitializeLogging();
-            
+            User riley = new User("RileyM", "riley", "riley@email.com", "Riley", "MacDonald", "Courtenay", 0, 0);
+            User brandon = new User("BrandonM", "brandon", "brandon@email.com", "Brandon", "Cosh", "Toronto", 0, 0);
+            User austin = new User("AustinS", "austin", "austin@email.com", "Austin", "Shouli", "Nanaimo", 0, 0);
+
+
+
             this.InitializeComponent();
 
 #if HAS_UNO || NETFX_CORE
