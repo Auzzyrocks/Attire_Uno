@@ -29,6 +29,13 @@ namespace AttireApp.Models.ViewModels
             set => SetMyProperty(ref _myTwoWayProperty, value);
         }
 
+
+        //private int _CurrentTemp = 0;
+        //public int CurrentTemp
+        //{
+        //    get => _CurrentTemp;
+        //    set => SetMyProperty(ref _CurrentTemp, value);
+        //}
         // for normal vars that don't need to be bindable we can ignore the setters and getters and use as regular vars
         private int millisecondDelay = 4000;
 
