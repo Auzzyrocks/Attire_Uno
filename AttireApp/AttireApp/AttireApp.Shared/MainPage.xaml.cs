@@ -1,4 +1,4 @@
-﻿using Attire.DataBase;
+﻿using AttireApp.DataBase;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -30,6 +30,7 @@ namespace AttireApp
             } else
             {
                 // show invalid entry error and stay at login page
+
             }
         }
 

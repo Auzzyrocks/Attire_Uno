@@ -4,7 +4,7 @@ using AttireApp.Database.DBUser;
 using System.Security.Cryptography;
 using AttireApp.Database;
 
-namespace Attire.DataBase
+namespace AttireApp.DataBase
 {
     public class Login : User
     {
