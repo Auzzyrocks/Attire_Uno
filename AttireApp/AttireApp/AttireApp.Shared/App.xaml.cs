@@ -1,7 +1,6 @@
-﻿using Attire.DataBase;
+﻿using AttireApp.DataBase;
 using AttireApp.Database;
 using AttireApp.Database.DBUser;
-using AttireApp.DataBase;
 using Microsoft.Extensions.Logging;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
