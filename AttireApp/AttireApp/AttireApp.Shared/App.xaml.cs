@@ -30,9 +30,9 @@ namespace AttireApp
             InitializeDataBase();
             InitializeLogging();
                                  //username, password, email, firstname, lastname,  location, tempunit, warmthindex
-            User riley = new User("RileyM", "riley", "riley@email.com", "Riley", "MacDonald", "Courtenay", 0, 0);
-            User brandon = new User("BrandonC", "brandon", "brandon@email.com", "Brandon", "Cosh", "Toronto", 0, 0);
-            User austin = new User("AustinS", "austin", "austin@email.com", "Austin", "Shouli", "Nanaimo", 0, 0);
+            //User riley = new User("RileyM", "riley", "riley@email.com", "Riley", "MacDonald", "Courtenay", 0, 0);
+            //User brandon = new User("BrandonC", "brandon", "brandon@email.com", "Brandon", "Cosh", "Toronto", 0, 0);
+            //User austin = new User("AustinS", "austin", "austin@email.com", "Austin", "Shouli", "Nanaimo", 0, 0);
 
             //attireDB.AddNewUser("Name", "Pass", "Name@Email");
 
