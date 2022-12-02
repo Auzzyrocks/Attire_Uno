@@ -1,5 +1,5 @@
-﻿using AttireApp.Database.DBUser;
-using AttireApp.DataBase;
+﻿using AttireApp.DataBase;
+using AttireApp.Database.DBUser;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -132,10 +132,10 @@ namespace AttireApp.Database
                 user.UserName = rdr.GetString(1) ;
                 user.HashPass = rdr.GetString(2);
                 user.HashEmail = rdr.GetString(3);
-                //user.FirstName = rdr.GetString(4);
-                //user.LastName = rdr.GetString(5);
-                //user.Location = rdr.GetString(6);
-                //user.TempUnit = rdr.GetInt32(7);
+                user.FirstName = rdr.GetString(4);
+                user.LastName = rdr.GetString(5);
+                user.Location = rdr.GetString(6);
+                user.TempUnit = rdr.GetInt32(7);
                 usrList.Add(user);
                 //users.WarmthPref = rdr.GetInt32(8);
          //     System.Diagnostics.Debug.WriteLine($"ID: {rdr.GetInt32(0)} Username: {rdr.GetString(1)} Password: {rdr.GetString(2)} Email: {rdr.GetString(3)} FirstName: {rdr.GetString(4)}");
