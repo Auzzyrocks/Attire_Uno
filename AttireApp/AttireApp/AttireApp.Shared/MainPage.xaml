@@ -20,6 +20,7 @@
             <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
             <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
 
+            
             <!-- Username Label & Text Box -->
             <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
             <TextBox Width="300" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>

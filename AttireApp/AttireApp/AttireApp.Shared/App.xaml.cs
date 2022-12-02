@@ -1,4 +1,5 @@
-﻿using AttireApp.Database;
+﻿using Attire.DataBase;
+using AttireApp.Database;
 using AttireApp.Database.DBUser;
 using AttireApp.DataBase;
 using Microsoft.Extensions.Logging;
@@ -24,14 +25,13 @@ namespace AttireApp
         /// </summary>
         public App()
         {
+            //AttireDB attireDB = new();
+            //attireDB.DropTable("User");
             InitializeDataBase();
             InitializeLogging();
-            User riley = new User("RileyM", "riley", "riley@email.com", "Riley", "MacDonald", "Courtenay", 0, 0);
-            User brandon = new User("BrandonM", "brandon", "brandon@email.com", "Brandon", "Cosh", "Toronto", 0, 0);
-            User austin = new User("AustinS", "austin", "austin@email.com", "Austin", "Shouli", "Nanaimo", 0, 0);
 
-
-
+            //attireDB.AddNewUser("Name", "Pass", "Name@Email");
+            
             this.InitializeComponent();
 
 #if HAS_UNO || NETFX_CORE
