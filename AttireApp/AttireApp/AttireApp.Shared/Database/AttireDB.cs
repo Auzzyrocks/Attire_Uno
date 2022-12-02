@@ -1,5 +1,4 @@
-﻿using Attire.DataBase;
-using AttireApp.Database.DBUser;
+﻿using AttireApp.Database.DBUser;
 using AttireApp.DataBase;
 using System;
 using System.Collections.Generic;
