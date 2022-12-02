@@ -1,5 +1,4 @@
-﻿using Attire.DataBase;
-using AttireApp.Database;
+﻿using AttireApp.Database;
 using AttireApp.Database.DBUser;
 using AttireApp.DataBase;
 using Microsoft.Extensions.Logging;

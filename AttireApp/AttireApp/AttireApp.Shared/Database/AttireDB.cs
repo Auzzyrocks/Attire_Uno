@@ -93,7 +93,9 @@ namespace AttireApp.Database
 
             return true;
         }
-        public bool AddNewUser(string username, string pass, string email) 
+
+        //adds a user with only username password and email fields. Everything else is NULL
+        public bool AddTestUser(string username, string pass, string email) 
         {
             AttireDB data = new();
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);

@@ -1,7 +1,5 @@
 using System;
-using System.Security.Cryptography;
-using System.Text;
-using System.Data.SQLite;
+using AttireApp.DataBase;
 
 namespace AttireApp.Database.DBUser
 {
@@ -37,13 +35,22 @@ namespace AttireApp.Database.DBUser
 
         //default constructor (used in creating db)
         public User() { }
-        public User(string UserName, string PassWord)
-        {
-            using SHA256 mySHA = SHA256.Create();
-            byte[] pass = Encoding.UTF8.GetBytes(PassWord);
-            this.UserName = UserName;
-            this.HashPass = mySHA.ComputeHash(pass).ToString();
 
+        //this constructor is used to create a new user object, the user object will then be passed to the AddNewUser() function of AttireDB
+        //in order to add the user to the database.
+        //the UserID will be set automatically once added to the database. once the user is then pulled from the database, the userID will be accessble.
+        public User(string username, string password, string email, string firstname, string lastname, string location, int tempunit, int warmthpref)
+        {
+            this.UserName = username;
+            this.HashPass = Login.HashPass(password);
+            this.HashEmail = Accounts.HashEmail(email);
+            this.FirstName = firstname;
+            this.LastName = lastname;
+            this.Location = location;
+            this.TempUnit = tempunit;
+            this.WarmthPref = warmthpref;
+            AttireDB data = new();
+            data.AddNewUser(this);
 
 
         }
@@ -115,11 +122,5 @@ namespace AttireApp.Database.DBUser
             this.LastName = lName;
             return true; 
         }
-
-
-        //decided against these
-        //public void add_user_weather_history(string weather) { return; }
-        //public void get_historic_weather(string currentDate) { return; }
-
     }
 }

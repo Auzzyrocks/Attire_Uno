@@ -1,14 +1,12 @@
-using Attire.DataBase;
+using AttireApp.Database;
 using AttireApp.Database.DBUser;
+using System.Collections.Generic;
 
 namespace AttireApp.DataBase
 {
     public class Accounts : Login
     {   
-        //main driving function of this file, validates input and creates a user if there is no problem.
-        //will return an int to represent where the problem lies (e.g. returned -1 means email is not unique)
-        //also uses hash_pass from login.cs
-        public int AddAccount(string username, string password, string email, int location){return 0;}
+       
         
         //exact same functionality as hash_pass() but operates on an email
         public static new string HashEmail(string email)
@@ -18,26 +16,80 @@ namespace AttireApp.DataBase
         }
 
         //searches DB to see if email exists already
-        public bool is_unique_email(string hashEmail){return true;}
+        public bool is_unique_email(string hashEmail)
+        {
+            List<User> users = AttireDB.GetAllUsers();
+            foreach (User user in users) 
+            {
+                if(hashEmail == user.HashEmail)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
 
         //searches DB to see if username exists already
-        public bool is_unique_user(string username){return true;}
+        public bool is_unique_user(string username)
+        {
+            List<User> users = AttireDB.GetAllUsers();
+            foreach (User user in users)
+            {
+                if (username == user.UserName)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+
+
+        //All the functions below that Update the user do not update the database yet.
+
 
         //updates the DB with a new email for the specified user
         //returns true if the email is unique and false if it is already in the db
-        public bool update_email(User user, string newEmail){return true;}
+        public bool update_email(User curUser, string newEmail)
+        {
+            string newEmailHash = HashEmail(newEmail);
+            List<User> users = AttireDB.GetAllUsers();
+            foreach (User user in users)
+            {
+                if(newEmailHash == user.HashEmail)
+                {
+                    return false;
+                }
+            }
+
+            curUser.HashEmail = newEmailHash;
+            return true;
+        }
 
         //hashes and updates the DB with a new pass for the specified user
-        public void update_pass(User user, string newPass ){return;}
+        public void update_pass(User user, string newPass )
+        {
+            user.HashPass = Login.HashPass(newPass);
+        }
         
         //updates the specified users prefered unit of temp
-        public void update_temp(User user, bool tempUnit){return;}
+        public void update_temp(User user, int tempUnit)
+        {
+            user.TempUnit = tempUnit;
+        }
 
         //updates the db with the specified users new location
         //will need to update the historic weather for that user as well 
-        public void update_location(User user, string newLocation){return;}
+        public void update_location(User user, string newLocation)
+        {
+            user.Location = newLocation;
+        }
 
         //updates the specified users temp to warmth index preferences through a 2D array
-        public void update_preferences(int[,] preferences, int userID){return;}
+        public void update_preferences(User user, int warmthPref)
+        {
+            user.WarmthPref = warmthPref;
+        }
     }
 }
