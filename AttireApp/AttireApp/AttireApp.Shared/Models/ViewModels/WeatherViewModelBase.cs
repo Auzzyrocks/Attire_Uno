@@ -1,4 +1,5 @@
-﻿using AttireApp.Models.DataModels;
+﻿using AttireApp.Database.DBUser;
+using AttireApp.Models.DataModels;
 using AttireApp.WebServices;
 using System;
 using System.Collections.Generic;
@@ -20,9 +21,9 @@ namespace AttireApp.Models.ViewModels
         // Constructor
         public WeatherViewModelBase()
         {
-            if (LoggedInUser.CurrentUser != null)
+            if (User.CurrentUser != null)
             {
-                LocationPreference = LoggedInUser.CurrentUser.Location;
+                LocationPreference = User.CurrentUser.Location;
             }
             else { LocationPreference = "Vancouver"; }
             LoadWeather(); // we want to reload all the weather data anytime a new WeatherViewModelBase is instantiated

@@ -10,6 +10,7 @@ using AttireApp.Models.DataModels;
 using AttireApp.WebServices;
 using System.Threading.Tasks;
 using System;
+using AttireApp.Database.DBUser;
 
 namespace AttireApp.Models.ViewModels
 {
@@ -51,9 +52,9 @@ namespace AttireApp.Models.ViewModels
         // Insert constructor below here
         public ForecastViewModel()
         {
-            if (LoggedInUser.CurrentUser != null)
+            if (User.CurrentUser != null)
             {
-                CitySelected = LoggedInUser.CurrentUser.Location;
+                CitySelected = User.CurrentUser.Location;
             } else
             {
                 CitySelected = "Vancouver";

@@ -1,5 +1,6 @@
 ﻿// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
+using AttireApp.Database.DBUser;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -32,7 +33,7 @@ namespace AttireApp
         
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            LoggedInUser.CurrentUser = null;
+            User.CurrentUser = null;
             this.Frame.Navigate(typeof(MainPage));
         }
 
