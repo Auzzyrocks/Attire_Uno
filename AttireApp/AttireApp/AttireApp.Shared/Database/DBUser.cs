@@ -33,6 +33,7 @@ namespace AttireApp.Database.DBUser
 
         public int WarmthPref { get; set; }
 
+        public static User CurrentUser;
         //default constructor (used in creating db)
         public User() { }
 

@@ -32,6 +32,7 @@ namespace AttireApp
         
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
+            LoggedInUser.CurrentUser = null;
             this.Frame.Navigate(typeof(MainPage));
         }
 

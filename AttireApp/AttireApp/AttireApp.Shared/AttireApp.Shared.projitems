@@ -27,7 +27,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ForecastPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ForgotPasswordPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HomePage.xaml.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)LoggedInUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

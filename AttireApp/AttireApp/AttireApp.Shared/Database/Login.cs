@@ -28,7 +28,7 @@ namespace AttireApp.DataBase
             if (Hpass == curUser.HashPass)
             {
                 System.Diagnostics.Debug.WriteLine("Password correct. Access Granted");
-                LoggedInUser.CurrentUser = curUser; // brandon added this, this is how we can access the logged in user elsewhere in the code
+                User.CurrentUser = curUser; // brandon added this, this is how we can access the logged in user elsewhere in the code
                 return 1;
             }
             System.Diagnostics.Debug.WriteLine("Incorrect password");
