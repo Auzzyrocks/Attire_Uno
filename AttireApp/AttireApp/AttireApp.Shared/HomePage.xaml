@@ -19,24 +19,57 @@
     
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid toolkit:VisibleBoundsPadding.PaddingMask="All" Padding="12">
-            <Grid.RowDefinitions>
+            <!--<Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            
-            
-            <!--##############-->
-            <!-- Title - City -->
-            <!--##############-->
-            <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Name, Mode=TwoWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
-                <TextBlock Text="," Margin="0,0,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
-                <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Region, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
+            </Grid.RowDefinitions>-->
+
+
+            <!--Main Display-->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
+
+                <!-- Location -->
+                <StackPanel Orientation="Horizontal" Margin="0 30 0 50">
+                    <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Name, Mode=TwoWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text="," Margin="0,0,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Region, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
+                </StackPanel>
+
+                <!-- Current Temperature -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <TextBlock Text="Current Temperature:" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{x:Bind ViewModel.WeatherData.Current.TempC, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    
+                    <!-- Current Weather Icon-->
+                    <!--<StackPanel>
+                        <Image Width="65" Source="{x:Bind ViewModel.WeatherData.Current.Icon, Mode=OneWay}"/>
+                    </StackPanel>-->
+                    
+                </StackPanel>
+
+                <!-- Attire Recomendation -->
+                <StackPanel >
+                    <TextBlock Text="Today you should wear:" HorizontalAlignment="Center" Margin="0,20,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <!--<TextBlock Text="{x:Bind ViewModel.WeatherData.Current.IsDay, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>-->
+
+                    <!--<Image MaxWidth="250" MaxHeight="250" Source="ms-appx:///pants_icon.png"/>-->
+                    <Image Loaded="Image_Loaded"/>
+
+
+                </StackPanel>
+
+
             </StackPanel>
 
             <!-- You can access all the current weather data by binding to 'ViewModel.WeatherData.Current.[Specify what you want to show here] -->
             <!-- Ex. Text="{x:Bind ViewModel.WeatherData.Current.TempC, Mode=OneWay}" ; will show the current temperature in celcius -->
+
+            
+            
             <!-- Look at the Current.cs class to see everything thats available to bind through current -->
             <!-- Can also remove Current from your path and choose 'Location', 'Forecast' or 'Alerts' to access different data -->
             <!-- Take a look at the 'RootWeatherData.cs' class to see what can be accessed through the weatherData property -->
@@ -45,25 +78,41 @@
             <!-- We have to manual set it to "OneWay" binding; only goes from Backend to Frontend, ie. we want to show the current weather -->
             <!-- or to "TwoWay"; we want to read in data from the UI into a backend property, reading in the username/password -->
 
+
+            <!--<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <StackPanel Orientation="Horizontal">
+
+                    <TextBlock Text="It is Currently: "/>
+                    <TextBlock Text="{x:Bind ViewModel.WeatherData.Current.TempC, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text="degrees"/>
+
+                </StackPanel>
+            </StackPanel>-->
+
+
             <!-- To create your own properties that can be displayed take a look at HomeViewModel for info -->
-            <StackPanel Grid.Row="2" Orientation="Vertical">
-                <TextBlock Text="{x:Bind ViewModel.MyProperty, Mode=OneWay}"/>
-                <TextBox PlaceholderText="Type in here for two way binding" Text="{x:Bind ViewModel.MyTwoWayProperty, Mode=TwoWay}"/>
-                <TextBlock Grid.Row="2"  Text="{x:Bind ViewModel.MyTwoWayProperty, Mode=TwoWay}"/>
-                <Button Content="Click to See TwoWay Bind" Click="ShowTwoWayBind_Click"/>
-            </StackPanel>
+                <!-- 2-way Binding Example -->
+                <!--<StackPanel Grid.Row="2" Orientation="Vertical">
+                    <TextBlock Text="{x:Bind ViewModel.MyProperty, Mode=OneWay}"/>
+                    <TextBox PlaceholderText="Type in here for two way binding" Text="{x:Bind ViewModel.MyTwoWayProperty, Mode=TwoWay}"/>
+                    <TextBlock Grid.Row="2"  Text="{x:Bind ViewModel.MyTwoWayProperty, Mode=TwoWay}"/>
+                    <Button Content="Click to See TwoWay Bind" Click="ShowTwoWayBind_Click"/>
+                </StackPanel>-->
+                
 
-
-            <StackPanel Orientation="Horizontal" Grid.Row="1">
-                <!-- Settings Button -->
+            <!-- Settings Button -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1">
                 <Button Content="Settings" Click="SettingsPage_Click" HorizontalAlignment="Right" VerticalAlignment="Top" 
                     Height="40" Width="300" Margin="10, 10, 10, 10"/>
+            </StackPanel>
 
-                <!-- ForecastButton -->
+            <!-- ForecastButton -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                 <Button Content="Forecast" Click="ForecastPage_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" 
                     Height="40" Width="300" Margin="10, 10, 10, 10"/>
-
             </StackPanel>
+            
         </Grid>
     </ScrollViewer>
 </Page>

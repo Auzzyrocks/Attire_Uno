@@ -2,6 +2,7 @@
 
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media.Imaging;
 using System;
 
 namespace AttireApp
@@ -14,6 +15,7 @@ namespace AttireApp
         public HomePage()
         {
             this.InitializeComponent();
+
         }
 
         private void SettingsPage_Click(object sender, RoutedEventArgs e)
@@ -29,6 +31,36 @@ namespace AttireApp
         public void ShowTwoWayBind_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        void Image_Loaded(object sender, RoutedEventArgs e)
+        {
+           
+
+            Image img = sender as Image;
+            if (img != null)
+            {
+              
+
+                if (true)
+                {
+
+                    BitmapImage bitmapImage = new BitmapImage();
+                    img.Width = bitmapImage.DecodePixelWidth = 280;
+                    bitmapImage.UriSource = new Uri("ms-appx:///pants_icon.png");
+                    img.Source = bitmapImage;
+
+                }
+                else
+                {
+
+                    BitmapImage bitmapImage = new BitmapImage();
+                    img.Width = bitmapImage.DecodePixelWidth = 280;
+                    bitmapImage.UriSource = new Uri("ms-appx:///shorts_icon.png");
+                    img.Source = bitmapImage;
+                }
+              
+            }
         }
     }
 }

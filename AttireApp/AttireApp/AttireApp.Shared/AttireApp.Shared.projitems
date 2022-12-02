@@ -84,5 +84,9 @@
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Assets\images\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Images\" />
+  </ItemGroup>
   <Import Project="AttireApp.Shared.globs.props" Condition="'$(IsCodeSharingProject)'!='true'" />
 </Project>
