@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "AttireApp.Windows/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "Microsoft.Extensions.Logging.Console": "7.0.0",
           "Microsoft.WinAppDriver.Appium.WebDriver": "1.0.1-Preview",
           "Microsoft.Windows.CsWinRT": "2.0.1",

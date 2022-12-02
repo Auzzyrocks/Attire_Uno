@@ -1,6 +1,5 @@
-﻿using Attire.DataBase;
+﻿using AttireApp.DataBase;
 using AttireApp.Database.DBUser;
-using AttireApp.DataBase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

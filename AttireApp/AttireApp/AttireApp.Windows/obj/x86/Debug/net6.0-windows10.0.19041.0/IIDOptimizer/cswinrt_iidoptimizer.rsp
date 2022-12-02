@@ -1,41 +1,41 @@
 --target
-C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.dll
+C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\AttireApp.Windows.dll
 --outdir
-C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\IIDOptimizer\
+C:\Users\shoulau\Source\Repos\attire_uno2\AttireApp\AttireApp\AttireApp.Windows\obj\x86\Debug\net6.0-windows10.0.19041.0\IIDOptimizer\
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.winappdriver.appium.webdriver\1.0.1-preview\lib\net45\appium-dotnet-driver.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.winappdriver.appium.webdriver\1.0.1-preview\lib\net45\appium-dotnet-driver.dll
 --refs 
- C:\Users\Smile\.nuget\packages\castle.core\4.2.1\lib\netstandard1.3\Castle.Core.dll
+ C:\Users\shoulau\.nuget\packages\castle.core\4.2.1\lib\netstandard1.3\Castle.Core.dll
 --refs 
- C:\Users\Smile\.nuget\packages\commonservicelocator\2.0.5\lib\netcoreapp3.0\CommonServiceLocator.dll
+ C:\Users\shoulau\.nuget\packages\commonservicelocator\2.0.5\lib\netcoreapp3.0\CommonServiceLocator.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.CSharp.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.configuration.abstractions\7.0.0\lib\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.configuration.abstractions\7.0.0\lib\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.configuration.binder\7.0.0\lib\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.configuration.binder\7.0.0\lib\net6.0\Microsoft.Extensions.Configuration.Binder.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net6.0\Microsoft.Extensions.Configuration.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net6.0\Microsoft.Extensions.Configuration.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\7.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\7.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.dependencyinjection\7.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.dependencyinjection\7.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.logging.configuration\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.logging.configuration\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.Configuration.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.logging.console\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.Console.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.logging.console\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.Console.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net6.0\Microsoft.Extensions.Logging.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.options.configurationextensions\7.0.0\lib\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.options.configurationextensions\7.0.0\lib\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.options\7.0.0\lib\net6.0\Microsoft.Extensions.Options.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.options\7.0.0\lib\net6.0\Microsoft.Extensions.Options.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.extensions.primitives\7.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.extensions.primitives\7.0.0\lib\net6.0\Microsoft.Extensions.Primitives.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.VisualBasic.Core.dll
 --refs 
@@ -45,41 +45,41 @@ C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\Microsoft.Win32.Registry.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.22000.25\lib\Microsoft.Windows.SDK.NET.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windowsappsdk\1.2.221116.1\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\mscorlib.dll
 --refs 
- C:\Users\Smile\.nuget\packages\refractored.mvvmhelpers\1.6.2\lib\netstandard2.0\MvvmHelpers.dll
+ C:\Users\shoulau\.nuget\packages\refractored.mvvmhelpers\1.6.2\lib\netstandard2.0\MvvmHelpers.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\netstandard.dll
 --refs 
- C:\Users\Smile\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll
+ C:\Users\shoulau\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.AppContext.dll
 --refs 
@@ -119,7 +119,7 @@ C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Data.dll
 --refs 
- C:\Users\Smile\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.117\lib\netstandard2.1\System.Data.SQLite.dll
+ C:\Users\shoulau\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.117\lib\netstandard2.1\System.Data.SQLite.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Diagnostics.Contracts.dll
 --refs 
@@ -277,7 +277,7 @@ C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Runtime.InteropServices.RuntimeInformation.dll
 --refs 
- C:\Users\Smile\.nuget\packages\system.runtime.interopservices.windowsruntime\4.3.0\ref\netstandard1.0\System.Runtime.InteropServices.WindowsRuntime.dll
+ C:\Users\shoulau\.nuget\packages\system.runtime.interopservices.windowsruntime\4.3.0\ref\netstandard1.0\System.Runtime.InteropServices.WindowsRuntime.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Runtime.Intrinsics.dll
 --refs 
@@ -331,9 +331,9 @@ C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Text.Encoding.Extensions.dll
 --refs 
- C:\Users\Smile\.nuget\packages\system.text.encodings.web\7.0.0\lib\net6.0\System.Text.Encodings.Web.dll
+ C:\Users\shoulau\.nuget\packages\system.text.encodings.web\7.0.0\lib\net6.0\System.Text.Encodings.Web.dll
 --refs 
- C:\Users\Smile\.nuget\packages\system.text.json\7.0.0\lib\net6.0\System.Text.Json.dll
+ C:\Users\shoulau\.nuget\packages\system.text.json\7.0.0\lib\net6.0\System.Text.Json.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Text.RegularExpressions.dll
 --refs 
@@ -387,34 +387,34 @@ C:\Users\Smile\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\obj
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\System.Xml.XPath.XDocument.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core\4.0.1\lib\net6.0\Uno.Core.dll
+ C:\Users\shoulau\.nuget\packages\uno.core\4.0.1\lib\net6.0\Uno.Core.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.collections\4.0.1\lib\net6.0\Uno.Core.Extensions.Collections.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.collections\4.0.1\lib\net6.0\Uno.Core.Extensions.Collections.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.compatibility\4.0.1\lib\net6.0\Uno.Core.Extensions.Compatibility.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.compatibility\4.0.1\lib\net6.0\Uno.Core.Extensions.Compatibility.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.disposables\4.0.1\lib\net6.0\Uno.Core.Extensions.Disposables.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.disposables\4.0.1\lib\net6.0\Uno.Core.Extensions.Disposables.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions\4.0.1\lib\net6.0\Uno.Core.Extensions.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions\4.0.1\lib\net6.0\Uno.Core.Extensions.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.equality\4.0.1\lib\net6.0\Uno.Core.Extensions.Equality.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.equality\4.0.1\lib\net6.0\Uno.Core.Extensions.Equality.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.logging\4.0.1\lib\net6.0\Uno.Core.Extensions.Logging.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.logging\4.0.1\lib\net6.0\Uno.Core.Extensions.Logging.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.logging.singleton\4.0.1\lib\net6.0\Uno.Core.Extensions.Logging.Singleton.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.logging.singleton\4.0.1\lib\net6.0\Uno.Core.Extensions.Logging.Singleton.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.core.extensions.threading\4.0.1\lib\net6.0\Uno.Core.Extensions.Threading.dll
+ C:\Users\shoulau\.nuget\packages\uno.core.extensions.threading\4.0.1\lib\net6.0\Uno.Core.Extensions.Threading.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.diagnostics.eventing\2.0.1\lib\net5.0\Uno.Diagnostics.Eventing.dll
+ C:\Users\shoulau\.nuget\packages\uno.diagnostics.eventing\2.0.1\lib\net5.0\Uno.Diagnostics.Eventing.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.foundation.logging\4.6.19\lib\net6.0\Uno.Foundation.Logging.dll
+ C:\Users\shoulau\.nuget\packages\uno.foundation.logging\4.6.19\lib\net6.0\Uno.Foundation.Logging.dll
 --refs 
- C:\Users\Smile\.nuget\packages\uno.winui\4.6.19\lib\net5.0-windows10.0.18362.0\Uno.UI.Toolkit.dll
+ C:\Users\shoulau\.nuget\packages\uno.winui\4.6.19\lib\net5.0-windows10.0.18362.0\Uno.UI.Toolkit.dll
 --refs 
- C:\Users\Smile\.nuget\packages\selenium.webdriver\3.8.0\lib\netstandard2.0\WebDriver.dll
+ C:\Users\shoulau\.nuget\packages\selenium.webdriver\3.8.0\lib\netstandard2.0\WebDriver.dll
 --refs 
- C:\Users\Smile\.nuget\packages\selenium.support\3.8.0\lib\netstandard2.0\WebDriver.Support.dll
+ C:\Users\shoulau\.nuget\packages\selenium.support\3.8.0\lib\netstandard2.0\WebDriver.Support.dll
 --refs 
  C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.11\ref\net6.0\WindowsBase.dll
 --refs 
- C:\Users\Smile\.nuget\packages\microsoft.windows.cswinrt\2.0.1\lib\net6.0\WinRT.Runtime.dll
+ C:\Users\shoulau\.nuget\packages\microsoft.windows.cswinrt\2.0.1\lib\net6.0\WinRT.Runtime.dll
