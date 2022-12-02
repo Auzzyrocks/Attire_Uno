@@ -186,4 +186,3 @@ C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\b
 C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Uno.Foundation.Logging.dll
 C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Uno.UI.Toolkit.dll
 C:\Users\shoulau\Source\Repos\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
-C:\Users\brand\Desktop\AttireProject\attire_uno\AttireApp\AttireApp\AttireApp.Windows\bin\x86\Debug\net6.0-windows10.0.19041.0\Microsoft.Windows.SDK.NET.dll

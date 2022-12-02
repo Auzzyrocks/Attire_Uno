@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AttireApp.Models.ViewModels
 {
-    class LoginViewModel : WeatherViewModelBase
+    class LoginViewModel : BindableBase
     {
         private string _password = string.Empty;
         public string Password
@@ -21,16 +21,31 @@ namespace AttireApp.Models.ViewModels
             set => SetMyProperty(ref _username, value);
         }
 
+        private string _loginErrorMsg = String.Empty;
+        public string LoginErrorMsg
+        {
+            get => _loginErrorMsg;
+            set => SetMyProperty(ref _loginErrorMsg, value);
+        }
+
+        private bool _isFailedLogin = false;
+        public bool IsFailedLogin
+        {
+            get => _isFailedLogin;
+            set => SetMyProperty(ref _isFailedLogin, value);
+        }
+
         public bool OnLogin()
         {
             // do your username & password validation here
-            Console.WriteLine(Username);
-            Console.WriteLine(Password);
             if(Login.ValidateLogin(Username, Password) == 1)
             {
-            return true;
+                LoginErrorMsg = String.Empty;
+                return true;
             } else
             {
+                IsFailedLogin = true;
+                LoginErrorMsg = "Incorrect username/password";
                 return false;
             }
         }

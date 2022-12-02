@@ -27,6 +27,7 @@ namespace AttireApp
             if(ViewModel.OnLogin()) // <-- do your validation in this function 
             {
                 this.Frame.Navigate(typeof(HomePage));
+
             } else
             {
                 // show invalid entry error and stay at login page
