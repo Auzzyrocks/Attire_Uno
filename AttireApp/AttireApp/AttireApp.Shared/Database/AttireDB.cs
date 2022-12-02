@@ -1,4 +1,6 @@
-﻿using AttireApp.Database.DBUser;
+﻿using Attire.DataBase;
+using AttireApp.Database.DBUser;
+using AttireApp.DataBase;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -100,10 +102,11 @@ namespace AttireApp.Database
             conn.Open();
             var sqlcommand = new SQLiteCommand(conn);
 
-            sqlcommand.CommandText = "INSERT INTO User(username, password, email) VALUES(@username, @password, @email)";
+            sqlcommand.CommandText = "INSERT INTO User(username, hashpass, hashemail) VALUES(@username, @hashpass, @hashemail)";
             sqlcommand.Parameters.AddWithValue("@username", username);
-            sqlcommand.Parameters.AddWithValue("@password", pass);
-            sqlcommand.Parameters.AddWithValue("@email", email);
+
+            sqlcommand.Parameters.AddWithValue("@hashpass", Login.HashPass(pass));
+            sqlcommand.Parameters.AddWithValue("@hashemail", Accounts.HashEmail(email));
             sqlcommand.Prepare();
             sqlcommand.ExecuteNonQuery();
 
@@ -130,10 +133,10 @@ namespace AttireApp.Database
                 user.UserName = rdr.GetString(1) ;
                 user.HashPass = rdr.GetString(2);
                 user.HashEmail = rdr.GetString(3);
-                user.FirstName = rdr.GetString(4);
-                user.LastName = rdr.GetString(5);
-                user.Location = rdr.GetString(6);
-                user.TempUnit = rdr.GetInt32(7);
+                //user.FirstName = rdr.GetString(4);
+                //user.LastName = rdr.GetString(5);
+                //user.Location = rdr.GetString(6);
+                //user.TempUnit = rdr.GetInt32(7);
                 usrList.Add(user);
                 //users.WarmthPref = rdr.GetInt32(8);
          //     System.Diagnostics.Debug.WriteLine($"ID: {rdr.GetInt32(0)} Username: {rdr.GetString(1)} Password: {rdr.GetString(2)} Email: {rdr.GetString(3)} FirstName: {rdr.GetString(4)}");

@@ -25,8 +25,12 @@ namespace AttireApp
         /// </summary>
         public App()
         {
+            //AttireDB attireDB = new();
+            //attireDB.DropTable("User");
             InitializeDataBase();
             InitializeLogging();
+
+            //attireDB.AddNewUser("Name", "Pass", "Name@Email");
             
             this.InitializeComponent();
 
