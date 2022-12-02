@@ -21,6 +21,18 @@ namespace AttireApp
             this.Frame.Navigate(typeof(HomePage));
         }
 
+        // Your Login_Click should look something like this
+        private void Brandon_Login_Click(object sender, RoutedEventArgs e)
+        {
+            if(ViewModel.OnLogin()) // <-- do your validation in this function 
+            {
+                this.Frame.Navigate(typeof(HomePage));
+            } else
+            {
+                // show invalid entry error and stay at login page
+            }
+        }
+
         //created basic functionality but its still not connected to the login fields
         private void Login_Click(object sender, RoutedEventArgs e)
         {
