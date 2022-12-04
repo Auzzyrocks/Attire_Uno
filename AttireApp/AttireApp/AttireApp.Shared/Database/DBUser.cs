@@ -42,6 +42,12 @@ namespace AttireApp.Database.DBUser
         //the UserID will be set automatically once added to the database. once the user is then pulled from the database, the userID will be accessble.
         public User(string username, string password, string email, string firstname, string lastname, string location, int tempunit, int warmthpref)
         {
+            if(Accounts.IsUniqueEmail(Accounts.HashEmail(email)) == false || Accounts.IsUniqueUser(username) == false)
+            {
+                //returns without assigning anything when email or username arent unique 
+                System.Diagnostics.Debug.WriteLine("Username or Email is not unique. User not added to database");
+                return;
+            }
             this.UserName = username;
             this.HashPass = Login.HashPass(password);
             this.HashEmail = Accounts.HashEmail(email);
@@ -52,6 +58,8 @@ namespace AttireApp.Database.DBUser
             this.WarmthPref = warmthpref;
             AttireDB data = new();
             data.AddNewUser(this);
+            System.Diagnostics.Debug.WriteLine("User successfully added to database");
+            
 
 
         }
@@ -61,45 +69,66 @@ namespace AttireApp.Database.DBUser
        
         //setters for user object. these will call db for info and set it to the class. (will be used in constructor)
         //these will also be used for updating the user's names and preferences.
-        public bool SetUsername(string NewUserName)
+        public bool UpdateUsername(string NewUserName)
         {
             //add uniqueness checks
             this.UserName = NewUserName;
             return true;
         }
-        public bool SetFirstName(string NewName)
+
+        //not used in production
+        //public bool SetFirstName(string NewName)
+        //{
+        //    this.FirstName = NewName;
+        //    return true;
+        //}
+        //public bool SetLastName(string NewName)
+        //{
+        //    this.LastName = NewName;
+        //    return true;
+        //}
+        public int UpdatePassword(string currentpass, string newpass, string confirmpass)
         {
-            this.FirstName = NewName;
-            return true;
-        }
-        public bool SetLastName(string NewName)
-        {
-            this.LastName = NewName;
-            return true;
+            //if current password field does not match the current password in the datbase, return 0
+            if (Login.HashPass(currentpass) != CurrentUser.HashPass)
+            {
+                System.Diagnostics.Debug.WriteLine("The password you entered does not match your current password");
+                return 0;
+            }
+            //if confirm password field is incorrect, return -1
+            if (newpass != confirmpass)
+            {
+                System.Diagnostics.Debug.WriteLine("The new password and confirm password fields do not match");
+                return -1;
+            }
+            //update password and return 1
+            AttireDB.UpdateUserPassword(newpass);
+            System.Diagnostics.Debug.WriteLine("Password updated");
+
+            return 1;
         }
 
-        public bool SetLocation(string loc) {
+
+        public void UpdateLocation(string newloc) {
             //add error handling for this guy
-            this.Location = loc;
-
-            Console.WriteLine("Location not found :(");
-            Console.WriteLine("Enter new location (0-3)");
-            return true;
+            this.Location = newloc;
+            AttireDB.UpdateUserLocation(newloc);
 
         }
 
 
-        public bool SetTempUnit(int TempUnit) 
+        public void UpdateTempUnit(int TempUnit) 
         { 
             this.TempUnit = TempUnit;
-            return true; 
+            AttireDB.UpdateUserTempUnit(TempUnit);  
+
         }
 
         // BRANDON added this, so changes can be made via settings page
-        public bool SetWarmthPref(int WarmthPref)
+        public void UpdateWarmthPref(int WarmthPref)
         {
             this.WarmthPref = WarmthPref;
-            return true;
+            AttireDB.UpdateUserWarmthPref(WarmthPref);
         }
 
         //getters for user specific weather data from "user weather" and "historic weather" tables
@@ -110,11 +139,11 @@ namespace AttireApp.Database.DBUser
             return; 
         }
         //set both firstname and lastname with one call
-        public bool UpdateNames(string fName, string lName) 
-        {
-            this.FirstName = fName;
-            this.LastName = lName;
-            return true; 
-        }
+        //public bool UpdateNames(string fName, string lName) 
+        //{
+        //    this.FirstName = fName;
+        //    this.LastName = lName;
+        //    return true; 
+        //}
     }
 }

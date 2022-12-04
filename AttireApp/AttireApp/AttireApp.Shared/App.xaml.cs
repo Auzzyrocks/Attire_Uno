@@ -26,6 +26,7 @@ namespace AttireApp
         {
             InitializeDataBase();
             InitializeLogging();
+            //AttireDB.DropTable("User");
             //username, password, email, firstname, lastname,  location, tempunit, warmthindex
             //User riley = new User("RileyM", "riley", "riley@email.com", "Riley", "MacDonald", "Courtenay", 0, 0);
             //User brandon = new User("BrandonC", "brandon", "brandon@email.com", "Brandon", "Cosh", "Toronto", 0, 0);

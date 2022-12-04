@@ -21,9 +21,9 @@ namespace AttireApp.Models.ViewModels
 
         public void SaveChanges()
         {
-            User.CurrentUser.SetTempUnit(TempUnitSelected);
-            User.CurrentUser.SetLocation(LocationSelected);
-            User.CurrentUser.SetWarmthPref(WarmthPreferenceSelected);
+            User.CurrentUser.UpdateLocation(LocationSelected);                //updates the user's location in the database to reflect this change
+            User.CurrentUser.UpdateWarmthPref(WarmthPreferenceSelected);      //updates the user's warmth pref in the database to reflect this change
+            User.CurrentUser.UpdateTempUnit(TempUnitSelected);                //updates the user's temp unit in the database to reflect this change
 
             OnSavedChanges();
         }

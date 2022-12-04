@@ -44,7 +44,7 @@ namespace AttireApp.Database
             conn.Open();
             data.CreateUserTable(conn);
         }
-        public void DropTable(string tablename)
+        public static void DropTable(string tablename)
         {
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
             conn.Open();
@@ -55,7 +55,7 @@ namespace AttireApp.Database
         private void CreateUserTable(SQLiteConnection conn)
         {
             SQLiteCommand sqlite_cmd;
-            string Createsql = "CREATE TABLE IF NOT EXISTS User (id INTEGER PRIMARY KEY, username TEXT, hashpass TEXT, hashemail TEXT, firstname TEXT, lastname TEXT, location TEXT, tempunit INTEGER);";
+            string Createsql = "CREATE TABLE IF NOT EXISTS User (id INTEGER PRIMARY KEY, username TEXT, hashpass TEXT, hashemail TEXT, firstname TEXT, lastname TEXT, location TEXT, tempunit INTEGER, warmthpref INTEGER);";
             sqlite_cmd = conn.CreateCommand();
             sqlite_cmd.CommandText = Createsql;
             sqlite_cmd.ExecuteNonQuery();
@@ -75,12 +75,20 @@ namespace AttireApp.Database
 
         public bool AddNewUser(User user)
         {
+            List<User> verify = GetAllUsers();
+            foreach(User us in verify)
+            {
+                if(user.UserName == us.UserName)
+                {
+                    return false;
+                }
+            }
             AttireDB data = new();
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
             conn.Open();
             var sqlcommand = new SQLiteCommand(conn);
 
-            sqlcommand.CommandText = "INSERT INTO User(username, hashpass, hashemail, firstname, lastname, location, tempunit) VALUES(@username, @hashpass, @hashemail, @firstname, @lastname, @location, @tempunit)";
+            sqlcommand.CommandText = "INSERT INTO User(username, hashpass, hashemail, firstname, lastname, location, tempunit, warmthpref) VALUES(@username, @hashpass, @hashemail, @firstname, @lastname, @location, @tempunit, @warmthpref)";
             sqlcommand.Parameters.AddWithValue("@username", user.UserName);
             sqlcommand.Parameters.AddWithValue("@hashpass", user.HashPass);
             sqlcommand.Parameters.AddWithValue("@hashemail", user.HashEmail);
@@ -88,14 +96,18 @@ namespace AttireApp.Database
             sqlcommand.Parameters.AddWithValue("@lastname", user.LastName);
             sqlcommand.Parameters.AddWithValue("@location", user.Location);
             sqlcommand.Parameters.AddWithValue("@tempunit", user.TempUnit);
+            sqlcommand.Parameters.AddWithValue("@warmthpref", user.WarmthPref);
             sqlcommand.Prepare();
             sqlcommand.ExecuteNonQuery();
 
 
             return true;
         }
+
+        //this function is used for testing purposes
         public bool AddNewUser(string username, string pass, string email) 
         {
+
             AttireDB data = new();
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
             conn.Open();
@@ -112,7 +124,57 @@ namespace AttireApp.Database
 
             return true; 
         }
+
+
+        public static void UpdateUserTempUnit(int newunit)
+        {
+            AttireDB db = new();
+            using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
+            conn.Open();
+            var sqlcommand = new SQLiteCommand(conn);
+
+            sqlcommand.CommandText = "UPDATE User SET tempunit = '" + newunit + "' WHERE username = '" + User.CurrentUser.UserName + "'";
+            sqlcommand.ExecuteNonQuery();
+            System.Diagnostics.Debug.WriteLine("Temp unit updated");
+        }
+        public static void UpdateUserWarmthPref(int newpref)
+        {
+            AttireDB db = new();
+            using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
+            conn.Open();
+            var sqlcommand = new SQLiteCommand(conn);
+
+            sqlcommand.CommandText = "UPDATE User SET warmthpref = '" + newpref + "' WHERE username = '" + User.CurrentUser.UserName + "'";
+            sqlcommand.ExecuteNonQuery();
+            System.Diagnostics.Debug.WriteLine("Warmth preferences updated");
+        }
         
+        public static void UpdateUserPassword(string newpass)
+        {
+           
+            AttireDB db = new();
+            using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
+            conn.Open();
+            var sqlcommand = new SQLiteCommand(conn);
+            string hpass = Login.HashPass(newpass);
+
+            sqlcommand.CommandText = "UPDATE User SET hashpass = '" + hpass + "' WHERE username = '" + User.CurrentUser.UserName + "'";
+            sqlcommand.ExecuteNonQuery();
+            System.Diagnostics.Debug.WriteLine("Password Updated");
+        }
+
+        public static void UpdateUserLocation(string newlocation) 
+        {
+            AttireDB db = new();
+            using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
+            conn.Open();
+            var sqlcommand = new SQLiteCommand(conn);
+
+            sqlcommand.CommandText = "UPDATE User SET location = '" + newlocation + "' WHERE username = '" + User.CurrentUser.UserName + "'";
+            sqlcommand.ExecuteNonQuery();
+            System.Diagnostics.Debug.WriteLine("Location updated");
+
+        }
         //TODO
         public static bool DeleteUser(string username) { return false; }
 
