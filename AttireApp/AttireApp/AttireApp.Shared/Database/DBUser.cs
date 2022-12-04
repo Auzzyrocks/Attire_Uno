@@ -95,6 +95,11 @@ namespace AttireApp.Database.DBUser
                 System.Diagnostics.Debug.WriteLine("The password you entered does not match your current password");
                 return 0;
             }
+            if (string.IsNullOrEmpty(newpass) || string.IsNullOrEmpty(confirmpass) || string.IsNullOrWhiteSpace(newpass) || string.IsNullOrWhiteSpace(confirmpass))
+            {
+                System.Diagnostics.Debug.WriteLine("The new password cannot be left blank");
+                return -2;
+            }
             //if confirm password field is incorrect, return -1
             if (newpass != confirmpass)
             {

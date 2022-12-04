@@ -132,6 +132,7 @@ namespace AttireApp.Database
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
             conn.Open();
             var sqlcommand = new SQLiteCommand(conn);
+            User.CurrentUser.TempUnit = newunit;
 
             sqlcommand.CommandText = "UPDATE User SET tempunit = '" + newunit + "' WHERE username = '" + User.CurrentUser.UserName + "'";
             sqlcommand.ExecuteNonQuery();
@@ -143,6 +144,7 @@ namespace AttireApp.Database
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
             conn.Open();
             var sqlcommand = new SQLiteCommand(conn);
+            User.CurrentUser.WarmthPref = newpref;
 
             sqlcommand.CommandText = "UPDATE User SET warmthpref = '" + newpref + "' WHERE username = '" + User.CurrentUser.UserName + "'";
             sqlcommand.ExecuteNonQuery();
@@ -157,6 +159,7 @@ namespace AttireApp.Database
             conn.Open();
             var sqlcommand = new SQLiteCommand(conn);
             string hpass = Login.HashPass(newpass);
+            User.CurrentUser.HashPass = hpass;
 
             sqlcommand.CommandText = "UPDATE User SET hashpass = '" + hpass + "' WHERE username = '" + User.CurrentUser.UserName + "'";
             sqlcommand.ExecuteNonQuery();
@@ -169,6 +172,7 @@ namespace AttireApp.Database
             using var conn = new SQLiteConnection("Data Source=" + Constants.DatabasePath);
             conn.Open();
             var sqlcommand = new SQLiteCommand(conn);
+            User.CurrentUser.Location = newlocation;
 
             sqlcommand.CommandText = "UPDATE User SET location = '" + newlocation + "' WHERE username = '" + User.CurrentUser.UserName + "'";
             sqlcommand.ExecuteNonQuery();
