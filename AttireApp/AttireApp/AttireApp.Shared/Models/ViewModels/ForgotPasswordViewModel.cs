@@ -52,7 +52,13 @@ namespace AttireApp.Models.ViewModels
             }
             else if(User.CurrentUser.UpdatePassword(CurPassword, NewPass, ConfirmPass) == -1)
             {
+                IsPasswordInvalid = true;
                 UpdatePassErrorMsg = "The new password and confirm password fields do not match. Please try again";
+                return false;
+            }else if(User.CurrentUser.UpdatePassword(CurPassword, NewPass, ConfirmPass) == -2)
+            {
+                IsPasswordInvalid = true;
+                UpdatePassErrorMsg = "Your new password cannot be empty. Please try again";
                 return false;
             }
             return true;
