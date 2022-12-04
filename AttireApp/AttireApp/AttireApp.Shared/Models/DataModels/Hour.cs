@@ -5,6 +5,7 @@
  * Description:
  *      A 'model' to consume Json weather API from weatherAPI.com
  */
+using AttireApp.Database.DBUser;
 using AttireApp.Models.ViewModels;
 using System;
 using System.Text.Json.Serialization;
@@ -34,6 +35,19 @@ namespace AttireApp.Models.DataModels
 
         [JsonPropertyName("temp_f")]
         public double TempF { get; set; }
+
+        public string TempP
+        {
+            get
+            {
+                string temp = TempC.ToString();
+                if(User.CurrentUser != null)
+                {
+                    temp = User.CurrentUser.TempUnit == 0? Math.Round(TempC) + "°C" : Math.Round(TempF) + "°F";
+                }
+                return temp;
+            }
+        }
 
         [JsonPropertyName("is_day")]
         public int IsDay { get; set; }

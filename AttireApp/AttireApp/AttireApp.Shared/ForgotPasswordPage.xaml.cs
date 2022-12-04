@@ -16,7 +16,15 @@ namespace AttireApp
         }
         private void ChangePassword_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(HomePage));
+            if (ViewModel.ChangePass())
+            {
+                this.Frame.Navigate(typeof(HomePage));
+            }
+            else
+            {
+                //do something?
+            }
+            
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
+using AttireApp.Database.DBUser;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -22,6 +23,13 @@ namespace AttireApp
         
         private void ApplySettings_Click(object sender, RoutedEventArgs e)
         {
+            ViewModel.LocationSelected = Combo_Location.SelectedValue.ToString();
+            ViewModel.WarmthPreferenceSelected = Combo_WarmthPref.SelectedIndex;
+            ViewModel.WarmthPreferenceSelectedString = Combo_WarmthPref.SelectedValue.ToString();
+            ViewModel.TempUnitSelected = Combo_TempUnits.SelectedIndex;
+            ViewModel.TempUnitSelectedString = Combo_TempUnits.SelectedValue.ToString();
+
+            ViewModel.SaveChanges();
             //this.Frame.Navigate(typeof(HomePage));
         }
         
@@ -32,7 +40,7 @@ namespace AttireApp
         
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            
+            User.CurrentUser = null;
             this.Frame.Navigate(typeof(MainPage));
         }
 

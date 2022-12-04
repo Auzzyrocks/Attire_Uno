@@ -16,14 +16,26 @@
     </Page.DataContext>
     
     <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Orientation="Vertical" Background="SteelBlue">
+        <StackPanel Orientation="Vertical">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="SteelBlue" Offset="0.5"/>
+                    <GradientStop Color="#3e6bb5" Offset="0.85"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
             <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
-            <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
 
-            
+            <Canvas Name="Msg" Width="300" Height="40" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <Border BorderBrush="DarkRed" BorderThickness="1" Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}" CornerRadius="8">
+                    <Rectangle Width="300" Height="40" Canvas.Top="0" Canvas.Left="0" Fill="#ffc2ca" Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}" />
+                </Border>
+                <TextBlock Width="300" HorizontalTextAlignment="Center" Canvas.Top="10" Text="{x:Bind ViewModel.LoginErrorMsg, Mode=OneWay}" Foreground="DarkRed" FontSize="16" 
+                           Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}"/>
+            </Canvas>
+
             <!-- Username Label & Text Box -->
             <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-            <TextBox Width="300" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>
+            <TextBox Width="300" PlaceholderText="John" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>
 
             <!-- Label -->
             <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />

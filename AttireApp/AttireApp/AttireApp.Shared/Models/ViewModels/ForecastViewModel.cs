@@ -10,6 +10,7 @@ using AttireApp.Models.DataModels;
 using AttireApp.WebServices;
 using System.Threading.Tasks;
 using System;
+using AttireApp.Database.DBUser;
 
 namespace AttireApp.Models.ViewModels
 {
@@ -28,7 +29,7 @@ namespace AttireApp.Models.ViewModels
             set => SetMyProperty(ref _isBusy, value);
         }
 
-        private string _citySelected = "Nanaimo";
+        private string _citySelected = string.Empty;
         public string CitySelected
         {
             get => _citySelected;
@@ -51,6 +52,13 @@ namespace AttireApp.Models.ViewModels
         // Insert constructor below here
         public ForecastViewModel()
         {
+            if (User.CurrentUser != null)
+            {
+                CitySelected = User.CurrentUser.Location;
+            } else
+            {
+                CitySelected = "Vancouver";
+            }
            LoadWeather();
         }
 

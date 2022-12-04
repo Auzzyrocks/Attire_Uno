@@ -1,4 +1,5 @@
-﻿using AttireApp.Models.DataModels;
+﻿using AttireApp.Database.DBUser;
+using AttireApp.Models.DataModels;
 using AttireApp.WebServices;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,11 @@ namespace AttireApp.Models.ViewModels
         // Constructor
         public WeatherViewModelBase()
         {
+            if (User.CurrentUser != null)
+            {
+                LocationPreference = User.CurrentUser.Location;
+            }
+            else { LocationPreference = "Vancouver"; }
             LoadWeather(); // we want to reload all the weather data anytime a new WeatherViewModelBase is instantiated
         }
 
@@ -33,9 +39,11 @@ namespace AttireApp.Models.ViewModels
         }
 
         // This [will] read in the user location preference from the Database
+        private string _locationPreference = string.Empty;
         public string LocationPreference
         {
-            get => "Nanaimo"; // for now since the user database does not actually contain user info we set it to Nanaimo
+            get => _locationPreference;
+            set => SetMyProperty(ref _locationPreference, value);
         }
 
         private async void LoadWeather()

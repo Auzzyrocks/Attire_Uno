@@ -64,11 +64,11 @@
                                 <!-- High/Low Avg Temp -->
                                 <TextBlock Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center">
                                 <Run Text="H:"/>
-                                <Run Text="{x:Bind Day.MaxtempC, Mode=OneWay}"/>
+                                <Run Text="{x:Bind Day.MaxtempP, Mode=OneWay}"/>
                                 <Run Text="    L:"/>
-                                <Run Text="{x:Bind Day.MintempC, Mode=OneWay}"/>
+                                <Run Text="{x:Bind Day.MintempP, Mode=OneWay}"/>
                                 <Run Text="    Avg:"/>
-                                <Run Text="{x:Bind Day.AvgtempC, Mode=OneWay}"/>
+                                <Run Text="{x:Bind Day.AvgtempP, Mode=OneWay}"/>
                                 </TextBlock>
 
                                 <!-- Day Condition & Image -->
@@ -95,7 +95,7 @@
                                             <StackPanel Orientation="Horizontal" Padding="25,5">
                                                 <TextBlock Text="{x:Bind RTime.ToShortTimeString(), Mode=OneWay}" Width="75" VerticalAlignment="Center"/>
                                                 <Image Source="{x:Bind Condition.Icon}" Height="30" Margin="10,0,10,0"/>
-                                                <TextBlock Text="{x:Bind TempC, Mode=OneWay}" Style="{StaticResource BodyTextBlockStyle}" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{x:Bind TempP, Mode=OneWay}" Style="{StaticResource BodyTextBlockStyle}" Margin="10,0,0,0" VerticalAlignment="Center"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>

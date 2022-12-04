@@ -21,36 +21,31 @@
             <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
 
             <!-- Username Label & Text Box -->
-            <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-            <TextBox Width="300" Text="username@example.com" Margin="0,0,0,24"/>
+            <TextBlock x:Name="Textblock_Username" Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBox x:Name="Textbox_Username" Width="300" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>
 
             <!-- Password -->
             <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-            <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+            <PasswordBox x:Name="Passwordbox_Password" Width="300" Password="{x:Bind ViewModel.Password, Mode=TwoWay}" Margin="0,0,0,24"/>
         
             <!-- Confirm Password -->
             <TextBlock Width="300" Text="Confirm Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-            <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+            <PasswordBox x:Name="Passwordbox_PasswordConfirm" Width="300" Password="{x:Bind ViewModel.PasswordConfirm, Mode=TwoWay}" Margin="0,0,0,24"/>
         
             <!--Location-->
-            <ComboBox Header="Location" PlaceholderText="Select Your Location" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
-                <x:String>Nanaimo</x:String>
-                <x:String>Victoria</x:String>
-                <x:String>Courtney</x:String>
-                <x:String>Duncan</x:String>
-            </ComboBox>
-            
+            <ComboBox x:Name="Combo_Location" Header="Location" PlaceholderText="Select Your Location" ItemsSource="{x:Bind ViewModel.LocationOptions, Mode=TwoWay}" 
+                      Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center" />
+
             <!--Clothing Preferences-->
-            <ComboBox Header="Clothing Preferences" PlaceholderText="Select the most applicable" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
-                <x:String>Dress Very Warm</x:String>
-                <x:String>Dress Somewhat Warm</x:String>
-                <x:String>Dress Moderatley</x:String>
-                <x:String>Dress Somewhat Cool</x:String>
-                <x:String>Dress Very Cool</x:String>
-            </ComboBox>
+            <ComboBox x:Name="Combo_WarmthPref" Header="Clothing Preferences" PlaceholderText="Select the most applicable" 
+                      ItemsSource="{x:Bind ViewModel.WarmthPreferenceOptions, Mode=TwoWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center" />
+
+            <!--Temperature Scale Preferences-->
+            <ComboBox x:Name="Combo_TempUnitsPref" Header="Celcius / Fahrenheit" PlaceholderText="Select Prefered Temperature Units" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                          ItemsSource="{x:Bind ViewModel.TempUnitPrefOptions, Mode=TwoWay}"/>
 
             <!-- Submit Button -->
-            <Button Content="Submit" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 0, 20, 20"/>
+            <Button Content="Submit" HorizontalAlignment="Center" Click="Submit_Click" Height="40" Width="300" Margin="0, 0, 20, 20"/>
             <HyperlinkButton Content="Return to Login Page" Click="LoginPage_Click" HorizontalAlignment="Center" Margin="0, 0, 20, 40"/>
         </StackPanel>
     </ScrollViewer>
