@@ -41,7 +41,7 @@
                     
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                         <TextBlock Text="Current Temperature:" HorizontalAlignment="Center"/>
-                        <TextBlock Text="{x:Bind ViewModel.WeatherData.Current.TempC, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{x:Bind ViewModel.WeatherData.Current.TempP, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center"/>
                     </StackPanel>
                     
                     <!-- Current Weather Icon-->
@@ -53,6 +53,10 @@
 
                 <!-- Attire Recomendation -->
                 <StackPanel >
+                    <TextBlock Style="{StaticResource HeaderTextBlockStyle}">
+                        <Run Text="Welcome, "/>
+                        <Run Text="{x:Bind ViewModel.CurrentUser.UserName, Mode=OneWay}"/>
+                    </TextBlock>
                     <TextBlock Text="Today you should wear:" HorizontalAlignment="Center" Margin="0,20,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
                     <!--<TextBlock Text="{x:Bind ViewModel.WeatherData.Current.IsDay, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>-->
 
@@ -112,7 +116,10 @@
                 <Button Content="Forecast" Click="ForecastPage_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" 
                     Height="40" Width="300" Margin="10, 10, 10, 10"/>
             </StackPanel>
-            
+
+            <Grid Background="Gray" Opacity="0.95" Visibility="{x:Bind ViewModel.IsBusy, Mode=OneWay}" Grid.Row="0" Grid.RowSpan="4">
+                <TextBlock Text="Downloading data..." Style="{StaticResource TitleTextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
         </Grid>
     </ScrollViewer>
 </Page>

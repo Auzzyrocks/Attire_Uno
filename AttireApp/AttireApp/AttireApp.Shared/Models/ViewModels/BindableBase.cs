@@ -9,6 +9,7 @@
  *      
  *      SEE ForecastViewModel.cs for an example
  */
+using AttireApp.Database.DBUser;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -53,6 +54,11 @@ namespace AttireApp.Models.ViewModels
         protected void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public User CurrentUser
+        {
+            get => User.CurrentUser != null ? User.CurrentUser : null;
         }
     }
 }

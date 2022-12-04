@@ -5,7 +5,9 @@
  * Description:
  *      A 'model' to consume Json weather API from weatherAPI.com
  */
+using AttireApp.Database.DBUser;
 using AttireApp.Models.ViewModels;
+using System;
 using System.Text.Json.Serialization;
 
 namespace AttireApp.Models.DataModels
@@ -18,17 +20,56 @@ namespace AttireApp.Models.DataModels
         [JsonPropertyName("maxtemp_f")]
         public double MaxtempF { get; set; }
 
+        public string MaxtempP
+        {
+            get
+            {
+                string maxTemp = MaxtempC.ToString();
+                if(User.CurrentUser != null)
+                {
+                    maxTemp = User.CurrentUser.TempUnit == 0 ? Math.Round(MaxtempC).ToString() + "°C" : Math.Round(MaxtempF) + "°F";
+                }
+                return maxTemp;
+            }
+        }
+
         [JsonPropertyName("mintemp_c")]
         public double MintempC { get; set; }
 
         [JsonPropertyName("mintemp_f")]
         public double MintempF { get; set; }
 
+        public string MintempP
+        {
+            get
+            {
+                string minTemp = MintempC.ToString();
+                if (User.CurrentUser != null)
+                {
+                    minTemp = User.CurrentUser.TempUnit == 0 ? Math.Round(MintempC) + "°C" : Math.Round(MintempF) + "°F";
+                }
+                return minTemp;
+            }
+        }
+
         [JsonPropertyName("avgtemp_c")]
         public double AvgtempC { get; set; }
 
         [JsonPropertyName("avgtemp_f")]
         public double AvgtempF { get; set; }
+
+        public string AvgtempP
+        {
+            get
+            {
+                string avgTemp = AvgtempC.ToString();
+                if (User.CurrentUser != null)
+                {
+                    avgTemp = User.CurrentUser.TempUnit == 0 ? Math.Round(AvgtempC) + "°C" : Math.Round(AvgtempF)    + "°F";
+                }
+                return avgTemp;
+            }
+        }
 
         [JsonPropertyName("maxwind_mph")]
         public double MaxwindMph { get; set; }

@@ -40,6 +40,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Hour.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Location.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\RootWeatherData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\AccountPreferencesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\BindableBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\CreateAccountViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ForecastViewModel.cs" />
