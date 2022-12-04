@@ -53,6 +53,10 @@
 
                 <!-- Attire Recomendation -->
                 <StackPanel >
+                    <TextBlock>
+                        <Run Text="Welcome, "/>
+                        <Run Text="{x:Bind ViewModel.CurrentUser.UserName, Mode=OneWay}"/>
+                    </TextBlock>
                     <TextBlock Text="Today you should wear:" HorizontalAlignment="Center" Margin="0,20,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
                     <!--<TextBlock Text="{x:Bind ViewModel.WeatherData.Current.IsDay, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>-->
 

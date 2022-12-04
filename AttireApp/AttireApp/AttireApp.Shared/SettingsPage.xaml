@@ -22,21 +22,12 @@
                 <Button Content="Back To Home Page" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 30, 0, 50"/>
 
                 <!--Location-->
-                <ComboBox Header="Location" PlaceholderText="Select Your Location" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
-                    <x:String>Nanaimo</x:String>
-                    <x:String>Victoria</x:String>
-                    <x:String>Courtney</x:String>
-                    <x:String>Duncan</x:String>
-                </ComboBox>
+                <ComboBox x:Name="Combo_Location" Header="Location" PlaceholderText="{x:Bind ViewModel.LocationSelected, Mode=OneWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                          ItemsSource="{x:Bind ViewModel.LocationOptions, Mode=TwoWay}"/>
 
                 <!--Clothing Preferences-->
-                <ComboBox Header="Clothing Preferences" PlaceholderText="Select the most applicable" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
-                    <x:String>Dress Very Warm</x:String>
-                    <x:String>Dress Somewhat Warm</x:String>
-                    <x:String>Dress Moderatley</x:String>
-                    <x:String>Dress Somewhat Cool</x:String>
-                    <x:String>Dress Very Cool</x:String>
-                </ComboBox>
+                <ComboBox x:Name="Combo_WarmthPref" Header="Clothing Preferences" PlaceholderText="{x:Bind ViewModel.WarmthPreferenceSelectedString, Mode=OneWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                          ItemsSource="{x:Bind ViewModel.WarmthPreferenceOptions, Mode=TwoWay}"/>
 
                 <!--Temperature Scale Preferences-->
                 <ComboBox Header="Celcius / Fahrenheit" PlaceholderText="Select Temperature Scale" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
