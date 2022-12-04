@@ -40,6 +40,10 @@
             <ComboBox x:Name="Combo_WarmthPref" Header="Clothing Preferences" PlaceholderText="Select the most applicable" 
                       ItemsSource="{x:Bind ViewModel.WarmthPreferenceOptions, Mode=TwoWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center" />
 
+            <!--Temperature Scale Preferences-->
+            <ComboBox x:Name="Combo_TempUnitsPref" Header="Celcius / Fahrenheit" PlaceholderText="Select Prefered Temperature Units" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                          ItemsSource="{x:Bind ViewModel.TempUnitPrefOptions, Mode=TwoWay}"/>
+
             <!-- Submit Button -->
             <Button Content="Submit" HorizontalAlignment="Center" Click="Submit_Click" Height="40" Width="300" Margin="0, 0, 20, 20"/>
             <HyperlinkButton Content="Return to Login Page" Click="LoginPage_Click" HorizontalAlignment="Center" Margin="0, 0, 20, 40"/>

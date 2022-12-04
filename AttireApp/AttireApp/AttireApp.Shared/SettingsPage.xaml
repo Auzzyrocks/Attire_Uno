@@ -21,19 +21,30 @@
                 <!-- Return to Home Page Button -->
                 <Button Content="Back To Home Page" Click="HomePage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0, 30, 0, 50"/>
 
+                <!-- Message to confirm changes have been saved -->
+                <Canvas Name="Msg" Width="300" Height="40" HorizontalAlignment="Center" Margin="0,40">
+                        
+                    <Border BorderBrush="DarkGreen" BorderThickness="1" Visibility="{x:Bind ViewModel.IsSavedChanges, Mode=OneWay}" CornerRadius="8">
+                        <Rectangle Width="300" Height="40" Canvas.Top="0" Canvas.Left="0" Fill="#ccffd1" Opacity="1" Visibility="{x:Bind ViewModel.IsSavedChanges, Mode=OneWay}"/>
+                    </Border>
+                    <TextBlock Width="300" HorizontalTextAlignment="Center" Canvas.Top="10" Text="{x:Bind ViewModel.SavedChangesMsg, Mode=OneWay}" Foreground="DarkGreen" FontSize="16" 
+                               Visibility="{x:Bind ViewModel.IsSavedChanges, Mode=OneWay}" />
+                </Canvas>
+                
                 <!--Location-->
-                <ComboBox x:Name="Combo_Location" Header="Location" PlaceholderText="{x:Bind ViewModel.LocationSelected, Mode=OneWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                <!-- PlaceholderText="{x:Bind ViewModel.LocationSelected, Mode=OneWay}" -->
+                <ComboBox x:Name="Combo_Location" Header="Location" SelectedItem="{x:Bind ViewModel.LocationSelected, Mode=TwoWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
                           ItemsSource="{x:Bind ViewModel.LocationOptions, Mode=TwoWay}"/>
 
                 <!--Clothing Preferences-->
-                <ComboBox x:Name="Combo_WarmthPref" Header="Clothing Preferences" PlaceholderText="{x:Bind ViewModel.WarmthPreferenceSelectedString, Mode=OneWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                <!-- PlaceholderText="{x:Bind ViewModel.WarmthPreferenceSelectedString, Mode=OneWay}" -->
+                <ComboBox x:Name="Combo_WarmthPref" Header="Clothing Preferences" SelectedItem="{x:Bind ViewModel.WarmthPreferenceSelectedString, Mode=TwoWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
                           ItemsSource="{x:Bind ViewModel.WarmthPreferenceOptions, Mode=TwoWay}"/>
 
                 <!--Temperature Scale Preferences-->
-                <ComboBox Header="Celcius / Fahrenheit" PlaceholderText="Select Temperature Scale" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center">
-                    <x:String>Celsius</x:String>
-                    <x:String>Fahrenheit</x:String>
-                </ComboBox>
+                <!-- PlaceholderText="{x:Bind ViewModel.TempUnitSelectedString, Mode=TwoWay}" -->
+                <ComboBox x:Name="Combo_TempUnits" Header="Celcius / Fahrenheit" SelectedItem="{x:Bind ViewModel.TempUnitSelectedString, Mode=TwoWay}" Width="300" Margin="0, 0, 10, 30" HorizontalAlignment="Center"
+                          ItemsSource="{x:Bind ViewModel.TempUnitPrefOptions, Mode=TwoWay}"/>
 
                 <!-- Change Password -->
                 <Button Content="Change Password" Click="ForgotPasswordPage_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="10"/>

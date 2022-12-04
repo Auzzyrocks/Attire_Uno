@@ -32,7 +32,7 @@ namespace AttireApp
                 Console.WriteLine("Validated");
                 // User(string username, string password, string email, string firstname, string lastname, string location, int tempunit, int warmthpref)
                 User newUser = new User(ViewModel.Username, ViewModel.Password, ViewModel.Username + "@mail.com", "First Name", "Last Name",
-                    ViewModel.LocationSelected, 0, ViewModel.WarmthPreferenceSelected);
+                    ViewModel.LocationSelected, ViewModel.TempUnitSelected, ViewModel.WarmthPreferenceSelected);
 
                 User.CurrentUser = newUser;
                 this.Frame.Navigate(typeof(HomePage));
@@ -47,6 +47,7 @@ namespace AttireApp
             ViewModel.PasswordConfirm = Passwordbox_PasswordConfirm.Password;
             ViewModel.LocationSelected = Combo_Location.SelectedItem == null ? string.Empty : Combo_Location.SelectedItem.ToString();
             ViewModel.WarmthPreferenceSelected = Combo_WarmthPref.SelectedItem == null ? -1 : Combo_WarmthPref.SelectedIndex;
+            ViewModel.TempUnitSelected = Combo_TempUnitsPref == null ? -1 : Combo_TempUnitsPref.SelectedIndex;
         }
     }
 }

@@ -14,6 +14,7 @@ namespace AttireApp.Models.ViewModels
             {
                 LocationSelected = User.CurrentUser.Location;
                 WarmthPreferenceSelectedString = WarmthPreferenceOptions[User.CurrentUser.WarmthPref];
+                TempUnitSelectedString = TempUnitPrefOptions[User.CurrentUser.TempUnit];
             }
         }
         // location preference
@@ -46,7 +47,7 @@ namespace AttireApp.Models.ViewModels
         }
 
         // warmth preference index : 0 = Very Warm,  4 = Very Cool,  2 = Moderate
-        private int _warmthPreferenceSelected = -1;
+        private int _warmthPreferenceSelected = -1; // -1 tells us this hasn't been initialized
         public int WarmthPreferenceSelected
         {
             get => _warmthPreferenceSelected;
@@ -61,11 +62,31 @@ namespace AttireApp.Models.ViewModels
             set => SetMyProperty(ref _warmthPreferenceSelectedString, value);
         }
 
-        private int _tempUnit = -1;
-        public int TempUnit
+        // Temp units preference
+        private ObservableCollection<string> _tempUnitPrefOptions = new()
         {
-            get => _tempUnit;
-            set => SetMyProperty(ref _tempUnit, value);
+            "Celsius", "Fahrenheit"
+        };
+        public ObservableCollection<string> TempUnitPrefOptions
+        {
+            get => _tempUnitPrefOptions;
+            set => SetMyProperty(ref _tempUnitPrefOptions, value);
+        }
+
+        //temp unit pref index : 0 = Celsius, 1 = Fahrenheit
+        private int _tempUnitSelected = -1;
+        public int TempUnitSelected
+        {
+            get => _tempUnitSelected;
+            set => SetMyProperty(ref _tempUnitSelected, value);
+        }
+
+        //temp unit pref string
+        private string _tempUnitSelectedString = string.Empty;
+        public string TempUnitSelectedString
+        {
+            get => _tempUnitSelectedString;
+            set => SetMyProperty(ref _tempUnitSelectedString, value);
         }
     }
 }

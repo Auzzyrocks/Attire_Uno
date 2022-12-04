@@ -30,7 +30,7 @@ namespace AttireApp.WebServices
         public static async Task<RootWeatherData> CreateApiUrl(string city)     // creates the url to send to API
         {
             RootWeatherData result = await GetAsync(
-                $"https://api.weatherapi.com/v1/forecast.json?key={apiKey}" +
+                $"https://api.weatherapi.com/v1/forecast.json?key={WebUtility.HtmlEncode(apiKey)}" +
                 $"&q={WebUtility.HtmlEncode(city)},Canada" +
                 $"&days={daysForcast}" +
                 $"&aqi={additional}" +

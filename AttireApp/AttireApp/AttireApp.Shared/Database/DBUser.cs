@@ -95,6 +95,13 @@ namespace AttireApp.Database.DBUser
             return true; 
         }
 
+        // BRANDON added this, so changes can be made via settings page
+        public bool SetWarmthPref(int WarmthPref)
+        {
+            this.WarmthPref = WarmthPref;
+            return true;
+        }
+
         //getters for user specific weather data from "user weather" and "historic weather" tables
         //these might split into more than two functions
         public void UserWeatherHistory(string currentWeather) 
