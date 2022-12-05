@@ -29,11 +29,8 @@ namespace AttireApp
 
             if (ViewModel.ValidateAccountInfo())
             {
-                Console.WriteLine("Validated");
-                // User(string username, string password, string email, string firstname, string lastname, string location, int tempunit, int warmthpref)
-                User newUser = new User(ViewModel.Username, ViewModel.Password, ViewModel.Username + "@mail.com", "First Name", "Last Name",
-                    ViewModel.LocationSelected, ViewModel.TempUnitSelected, ViewModel.WarmthPreferenceSelected);
-
+                User newUser = ViewModel.CreateUser();
+                if (newUser == null) return; // if null, no user created
                 User.CurrentUser = newUser;
                 this.Frame.Navigate(typeof(HomePage));
             }
