@@ -9,7 +9,9 @@
     xmlns:datamodels="using:AttireApp.Models.DataModels"
     xmlns:toolkit="using:Uno.UI.Toolkit"
     mc:Ignorable="d"    
+    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
 
     <Page.DataContext>
         <viewmodels:LoginViewModel x:Name="ViewModel" />
@@ -19,11 +21,11 @@
         <StackPanel Orientation="Vertical">
             <StackPanel.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="SteelBlue" Offset="0.5"/>
-                    <GradientStop Color="#3e6bb5" Offset="0.85"/>
+                    <GradientStop Offset="0.5"/>
+                    <GradientStop Offset="0.85"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
+            <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 120, 0, 0" TextAlignment="Center" />
 
             <Canvas Name="Msg" Width="300" Height="40" HorizontalAlignment="Center" Margin="0,0,0,20">
                 <Border BorderBrush="DarkRed" BorderThickness="1" Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}" CornerRadius="8">
@@ -34,22 +36,24 @@
             </Canvas>
 
             <!-- Username Label & Text Box -->
-            <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBlock Width="300" Text="Username" FontWeight="SemiBold" FontSize="16" />
             <TextBox Width="300" PlaceholderText="John" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>
 
             <!-- Label -->
-            <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBlock Width="300" Text="Password" FontWeight="SemiBold" FontSize="16" />
             <PasswordBox Width="300" Password="{x:Bind ViewModel.Password, Mode=TwoWay}" Margin="0,0,0,24"/>
 
             <!-- Login Button -->
             <!-- I think i should change the click to "Login_Click" as this is the method ive created in mainpage.xaml.cs -Riley -->
-            <Button Content="Log In" Click="Brandon_Login_Click" HorizontalAlignment="Center" Height="40" Width="300"/>
+            <Button Content="Log In" Click="Brandon_Login_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0 0 0 20"/>
             
-            <HyperlinkButton Content="Link to Home Page" Click="HomePage_Click" HorizontalAlignment="Center"/>
+            <!--<HyperlinkButton Content="Link to Home Page" Click="HomePage_Click" HorizontalAlignment="Center"/>
             
-            <HyperlinkButton Content="Link to Forecast Page" Click="LinkForecast_Click" HorizontalAlignment="Center"/>
+            <HyperlinkButton Content="Link to Forecast Page" Click="LinkForecast_Click" HorizontalAlignment="Center"/>-->
             
             <HyperlinkButton Content="Create Account" Click="CreateAccountPage_Click" HorizontalAlignment="Center"/>
+            
+            <HyperlinkButton Content="Forgot Your Password?" Click="ForgotPasswordPage_Click" HorizontalAlignment="Center"/>
             
         </StackPanel>
     </ScrollViewer>

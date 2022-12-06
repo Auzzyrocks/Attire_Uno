@@ -30,14 +30,14 @@
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
 
                 <!-- Location -->
-                <StackPanel Orientation="Horizontal" Margin="0 30 0 50">
+                <StackPanel Orientation="Horizontal" Margin="0 15 0 5">
                     <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Name, Mode=TwoWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
                     <TextBlock Text="," Margin="0,0,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
                     <TextBlock Text="{x:Bind ViewModel.WeatherData.Location.Region, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>
                 </StackPanel>
 
                 <!-- Current Temperature -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 25 0 20">
                     
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                         <TextBlock Text="Current Temperature:" HorizontalAlignment="Center"/>
@@ -52,12 +52,12 @@
                 </StackPanel>
 
                 <!-- Attire Recomendation -->
-                <StackPanel >
-                    <TextBlock Style="{StaticResource HeaderTextBlockStyle}">
+                <StackPanel Margin="0 0 0 0">
+                    <TextBlock Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" FontSize="25">
                         <Run Text="Welcome, "/>
                         <Run Text="{x:Bind ViewModel.CurrentUser.UserName, Mode=OneWay}"/>
                     </TextBlock>
-                    <TextBlock Text="Today you should wear:" HorizontalAlignment="Center" Margin="0,20,10,0"  Style="{StaticResource HeaderTextBlockStyle}"/>
+                    <TextBlock Text=" Today you should wear:" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,-5"  Style="{StaticResource HeaderTextBlockStyle}"/>
                     <!--<TextBlock Text="{x:Bind ViewModel.WeatherData.Current.IsDay, Mode=OneWay}" Style="{StaticResource HeaderTextBlockStyle}"/>-->
 
                     <!--<Image MaxWidth="250" MaxHeight="250" Source="ms-appx:///pants_icon.png"/>-->
@@ -108,13 +108,13 @@
             <!-- Settings Button -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1">
                 <Button Content="Settings" Click="SettingsPage_Click" HorizontalAlignment="Right" VerticalAlignment="Top" 
-                    Height="40" Width="300" Margin="10, 10, 10, 10"/>
+                    Height="35" Width="200" Margin="10, 10, 10, 5"/>
             </StackPanel>
 
             <!-- ForecastButton -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                 <Button Content="Forecast" Click="ForecastPage_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" 
-                    Height="40" Width="300" Margin="10, 10, 10, 10"/>
+                    Height="35" Width="200" Margin="10, 10, 10, 5"/>
             </StackPanel>
 
             <Grid Background="Gray" Opacity="0.95" Visibility="{x:Bind ViewModel.IsBusy, Mode=OneWay}" Grid.Row="0" Grid.RowSpan="4">
