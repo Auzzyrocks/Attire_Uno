@@ -16,9 +16,17 @@
     </Page.DataContext>
    
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-        <StackPanel Orientation="Vertical" Background="SteelBlue">
+        <StackPanel Orientation="Vertical">
             <TextBlock Text="Create A New Account" FontSize="35" Margin="0, 50, 0, 30" TextAlignment="Center" />
             <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
+
+            <Canvas Name="Msg" Width="500" Height="40" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <Border BorderBrush="DarkRed" BorderThickness="1" Visibility="{x:Bind ViewModel.IsError, Mode=OneWay}" CornerRadius="8">
+                    <Rectangle Width="500" Height="40" Canvas.Top="0" Canvas.Left="0" Fill="#ffc2ca" Visibility="{x:Bind ViewModel.IsError, Mode=OneWay}" />
+                </Border>
+                <TextBlock Width="500" HorizontalTextAlignment="Center" Canvas.Top="10" Text="{x:Bind ViewModel.ErrorMsgText, Mode=OneWay}" Foreground="DarkRed" FontSize="16" 
+                           Visibility="{x:Bind ViewModel.IsError, Mode=OneWay}"/>
+            </Canvas>
 
             <!-- Username Label & Text Box -->
             <TextBlock x:Name="Textblock_Username" Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
