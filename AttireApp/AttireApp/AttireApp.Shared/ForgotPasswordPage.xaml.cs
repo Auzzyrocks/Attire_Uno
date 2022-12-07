@@ -20,11 +20,6 @@ namespace AttireApp
             {
                 this.Frame.Navigate(typeof(HomePage));
             }
-            else
-            {
-                //do something?
-            }
-            
         }
     }
 }

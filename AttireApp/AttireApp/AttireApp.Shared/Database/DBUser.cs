@@ -138,11 +138,11 @@ namespace AttireApp.Database.DBUser
 
         //getters for user specific weather data from "user weather" and "historic weather" tables
         //these might split into more than two functions
-        public void UserWeatherHistory(string currentWeather) 
-        {
-            //string w = currentWeather;
-            return; 
-        }
+        //public void UserWeatherHistory(string currentWeather) 
+        //{
+        //    //string w = currentWeather;
+        //    return; 
+        //}
         //set both firstname and lastname with one call
         //public bool UpdateNames(string fName, string lName) 
         //{
