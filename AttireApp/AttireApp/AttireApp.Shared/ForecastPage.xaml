@@ -44,10 +44,10 @@
                     <!-- Return to Home Page Button -->
                     <Button Content="Back to Home Page" Click="HomePage_Click" VerticalAlignment="Bottom" Height="32" Width="200" Margin="30,0,15,0"/>
 
-                    <TextBlock VerticalAlignment="Bottom" Text="Location:"> </TextBlock>
+                    <!--<TextBlock VerticalAlignment="Bottom" Text="Location:"> </TextBlock>
                     
                     <ComboBox x:Name="CityCombo" ItemsSource="{x:Bind ViewModel.CityOptions}" SelectionChanged="CityChange_SelectionChanged"
-                      Width="200"  VerticalAlignment="Bottom" Margin="15 0 0 0"/>
+                      Width="200"  VerticalAlignment="Bottom" Margin="15 0 0 0"/>-->
 
                 </StackPanel>
 

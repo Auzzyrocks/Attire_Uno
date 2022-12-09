@@ -29,15 +29,15 @@
             </Canvas>
 
             <!-- Username Label & Text Box -->
-            <TextBlock x:Name="Textblock_Username" Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBlock x:Name="Textblock_Username" Width="300" Text="Username" FontWeight="SemiBold" FontSize="16" />
             <TextBox x:Name="Textbox_Username" Width="300" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>
 
             <!-- Password -->
-            <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBlock Width="300" Text="Password" FontWeight="SemiBold" FontSize="16" />
             <PasswordBox x:Name="Passwordbox_Password" Width="300" Password="{x:Bind ViewModel.Password, Mode=TwoWay}" Margin="0,0,0,24"/>
         
             <!-- Confirm Password -->
-            <TextBlock Width="300" Text="Confirm Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
+            <TextBlock Width="300" Text="Confirm Password" FontWeight="SemiBold" FontSize="16" />
             <PasswordBox x:Name="Passwordbox_PasswordConfirm" Width="300" Password="{x:Bind ViewModel.PasswordConfirm, Mode=TwoWay}" Margin="0,0,0,24"/>
         
             <!--Location-->
