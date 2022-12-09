@@ -5,22 +5,56 @@
     xmlns:local="using:AttireApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="using:AttireApp.Models.ViewModels"
+    xmlns:datamodels="using:AttireApp.Models.DataModels"
+    xmlns:toolkit="using:Uno.UI.Toolkit"
     mc:Ignorable="d"    
+    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
 
-    <StackPanel Orientation="Vertical" Background="SteelBlue">
-        <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 170, 0, 75" TextAlignment="Center" />
-        <!--<Image Width="300" Source="https://loremflickr.com/360/360/dog"/>-->
+    <Page.DataContext>
+        <viewmodels:LoginViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Vertical">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Offset="0.5"/>
+                    <GradientStop Offset="0.85"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Text="ATTIRE" FontSize="35" Margin="0, 120, 0, 0" TextAlignment="Center" />
 
-        <!-- Username Label & Text Box -->
-        <TextBlock Width="300" Text="Username" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-        <TextBox Width="300" Text="username@example.com" Margin="0,0,0,24"/>
+            <Canvas Name="Msg" Width="300" Height="40" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <Border BorderBrush="DarkRed" BorderThickness="1" Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}" CornerRadius="8">
+                    <Rectangle Width="300" Height="40" Canvas.Top="0" Canvas.Left="0" Fill="#ffc2ca" Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}" />
+                </Border>
+                <TextBlock Width="300" HorizontalTextAlignment="Center" Canvas.Top="10" Text="{x:Bind ViewModel.LoginErrorMsg, Mode=OneWay}" Foreground="DarkRed" FontSize="16" 
+                           Visibility="{x:Bind ViewModel.IsFailedLogin, Mode=OneWay}"/>
+            </Canvas>
 
-        <!-- Label -->
-        <TextBlock Width="300" Text="Password" Foreground="#242424" FontWeight="SemiBold" FontSize="16" />
-        <PasswordBox Width="300" Password="" Margin="0,0,0,24"/>
+            <!-- Username Label & Text Box -->
+            <TextBlock Width="300" Text="Username" FontWeight="SemiBold" FontSize="16" />
+            <TextBox Width="300" PlaceholderText="John" Text="{x:Bind ViewModel.Username, Mode=TwoWay}" Margin="0,0,0,24"/>
 
-        <!-- Send Button -->
-        <Button Content="Log In" HorizontalAlignment="Center" Height="40" Width="300"/>
-    </StackPanel>
+            <!-- Label -->
+            <TextBlock Width="300" Text="Password" FontWeight="SemiBold" FontSize="16" />
+            <PasswordBox Width="300" Password="{x:Bind ViewModel.Password, Mode=TwoWay}" Margin="0,0,0,24"/>
+
+            <!-- Login Button -->
+            <!-- I think i should change the click to "Login_Click" as this is the method ive created in mainpage.xaml.cs -Riley -->
+            <Button Content="Log In" Click="Brandon_Login_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="0 0 0 20"/>
+            
+            <!--<HyperlinkButton Content="Link to Home Page" Click="HomePage_Click" HorizontalAlignment="Center"/>
+            
+            <HyperlinkButton Content="Link to Forecast Page" Click="LinkForecast_Click" HorizontalAlignment="Center"/>-->
+            
+            <HyperlinkButton Content="Create Account" Click="CreateAccountPage_Click" HorizontalAlignment="Center"/>
+            
+            <HyperlinkButton Content="Forgot Your Password?" Click="ForgotPasswordPage_Click" HorizontalAlignment="Center"/>
+            
+        </StackPanel>
+    </ScrollViewer>
 </Page>

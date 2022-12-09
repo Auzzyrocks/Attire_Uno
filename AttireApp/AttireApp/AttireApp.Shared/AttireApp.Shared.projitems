@@ -18,21 +18,76 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CreateAccountPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Accounts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DBUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\AttireDB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ForecastPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ForgotPasswordPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HomePage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\AirQuality.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Alerts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Astro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Condition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Current.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Day.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Forecast.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Hour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModels\RootWeatherData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\AccountPreferencesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\CreateAccountViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ForecastViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\ForgotPasswordViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\SettingsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewModels\WeatherViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SettingsPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebServices\WeatherApiHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)CreateAccountPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)ForecastPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)ForgotPasswordPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Assets\SharedAssets.md" />
+    <None Include="$(MSBuildThisFileDirectory)Database\Notes" />
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Assets\images\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Images\" />
   </ItemGroup>
   <Import Project="AttireApp.Shared.globs.props" Condition="'$(IsCodeSharingProject)'!='true'" />
 </Project>
