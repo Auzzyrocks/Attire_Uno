@@ -58,9 +58,9 @@ This project is no longer supported.
 
 This project was built for CSCI 265 at Vancouver Island University, by the following contributors: 
 
-Austin Shouli 
-Riley MacDonald
-Brandon Cosh
+Austin Shouli, 
+Riley MacDonald,
+Brandon Cosh,
 Anandita Gupta
 
 ## License
